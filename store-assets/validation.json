@@ -1,0 +1,18 @@
+[
+  {
+    "locale": "en-GB",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "errors": [],
+    "remaining": "Exact signed-release capture and developer-console submission validation",
+    "visual_review": "pass on tested debug build"
+  },
+  {
+    "locale": "en-US",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "errors": [],
+    "remaining": "Exact signed-release capture and developer-console submission validation",
+    "visual_review": "pass on tested debug build"
+  }
+]

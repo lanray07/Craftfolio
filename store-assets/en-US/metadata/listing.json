@@ -1,0 +1,26 @@
+{
+  "status": "Draft for the configured, tested release. Subscription claims require Amazon acceptance tests.",
+  "title": "Craftfolio: Patterns & Projects",
+  "short_description": "Save PDF craft patterns, organize knitting and crochet projects, and keep row counters and notes together offline.",
+  "long_description": "Every pattern saved. Every project remembered.\n\nCraftfolio brings your PDF and image patterns, craft projects and row counts into one calm workspace for compatible Fire tablets.\n\nYour Personal Pattern Library\nImport PDF, JPEG, PNG and WebP patterns. Search titles and filter by craft to find the knitting, crochet or sewing pattern you need. Original files are copied into local app storage, so reading does not depend on the source location remaining available. Export an original file whenever you need it.\n\nRead And Count Together\nZoom and pan across your pattern, move between PDF pages and return to your project's saved reading position. On wide tablet layouts, view the pattern and counters side by side. Large plus and minus controls help you keep your place, and undo corrects an accidental count.\n\nRemember Your Project\nCreate, edit, pause, resume and complete projects. Keep materials requirements and project notes beside the pattern. Your library, counters and notes work offline without registration or Google Play Services.\n\nFree And Premium\nFree includes up to 20 pattern imports, 3 unfinished projects and one counter per project. Premium adds unlimited pattern imports, unlimited projects and multiple named counters. Existing imported files, projects and counters remain accessible if Premium ends. Amazon manages subscription purchases and renewals. Verified Premium access requires reconnection at least every 72 hours; personal files stay available offline.\n\nPrivate By Design\nNo advertising, social feeds or analytics. Patterns and project notes stay on your device. Purchase verification uses Amazon account and receipt identifiers only. Uninstalling the app removes local app data, so keep your source files or export originals first.\n\nA thoughtful place to organize your next creative project.",
+  "feature_bullets": [
+    "Import and search PDF and image craft patterns",
+    "Track knitting, crochet and sewing projects offline",
+    "Read patterns beside large row counters with undo",
+    "Save project notes, materials requirements and reading position",
+    "Keep access to your imported files when Premium ends"
+  ],
+  "keywords": [
+    "knitting row counter",
+    "crochet pattern organizer",
+    "PDF pattern library",
+    "craft project tracker",
+    "sewing projects",
+    "offline pattern viewer",
+    "stitch counter"
+  ],
+  "category_candidates": [
+    "Productivity",
+    "Lifestyle"
+  ]
+}

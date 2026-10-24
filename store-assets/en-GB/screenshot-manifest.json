@@ -1,0 +1,53 @@
+{
+  "locale": "en-GB",
+  "ui_language": "Shared English UI; regional metadata and caption spelling differ",
+  "model": "KFTRWI",
+  "api": "28",
+  "screenshots": [
+    {
+      "file": "01-pattern-library.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "b3a6e5c737ce203d692a955876a77c0afa7ddb3dd8acf5690dd839ed9c0be3a7",
+      "headline": "Save and organise PDF patterns",
+      "benefit": "Search your private craft pattern library",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "02-knitting-row-counter.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "aa9e85a67901dede63b0736470b4bd5747b23a6510b85a9186c0493cc60986dd",
+      "headline": "Never lose your row count",
+      "benefit": "Read a pattern and count rows with undo",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "03-split-view-workspace.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "1d9771f3284bdcda6505358fab039cb929b98e6cb7f4c4a0692f17f5e7f42336",
+      "headline": "Patterns and counters side by side",
+      "benefit": "A comfortable workspace for your Fire tablet",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "04-project-tracker.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "1a0b03a41d9db49147f12615fa838184deb4f1f3a7453746bc7a141dc5c53080",
+      "headline": "Remember every craft project",
+      "benefit": "Resume saved counters, notes and requirements",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    }
+  ],
+  "review": "PASS: all UK frames and the US library frame visually reviewed; other US frame bodies pixel-identical. Continue project differs because the last opened sample changed. Final signed-release capture required."
+}

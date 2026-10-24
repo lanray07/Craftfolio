@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Craftfolio</string>
+    <string name="tagline">Every pattern saved. Every project remembered.</string>
+    <string name="library">Patterns</string><string name="projects">Projects</string><string name="premium">Premium</string><string name="free">Free</string>
+    <string name="back">Back</string><string name="edit_project">Edit project</string><string name="export_original">Export original</string>
+    <string name="active">Active</string><string name="paused">Paused</string><string name="completed">Completed</string>
+    <string name="minus">−1</string><string name="plus">+1</string><string name="undo">Undo</string><string name="add_counter">Add counter</string>
+    <string name="materials">Materials requirements</string><string name="no_materials">No materials recorded. Add them in Edit project.</string>
+    <string name="notes">Project notes</string><string name="add_note">Add note</string>
+    <string name="continue_project">Continue project</string><string name="search">Search patterns or crafts</string>
+    <string name="all">All</string><string name="knitting">Knitting</string><string name="crochet">Crochet</string><string name="sewing">Sewing</string><string name="other">Other</string>
+    <string name="import_craft">Import craft: %1$s</string><string name="import_pattern">Import pattern</string>
+    <string name="empty_library">A home for your next idea. Import a PDF or image pattern to begin your private, offline library.</string>
+    <string name="image">Image</string><string name="start_project">Start project</string><string name="open_pattern">Open pattern</string>
+    <string name="empty_projects">Start a project from your pattern library. Your counters, notes and reading position stay together.</string>
+    <string name="action_failed">Could not save this action</string><string name="close">Close</string><string name="text">Text</string><string name="save">Save</string><string name="cancel">Cancel</string><string name="project_name">Project name</string>
+    <string name="premium_title">More room to make</string>
+    <string name="premium_description">Premium adds unlimited pattern imports, unlimited projects and multiple named counters per project.</string>
+    <string name="free_description">Free includes 20 pattern imports, 3 unfinished projects, one counter per project, notes, materials requirements and the split-view reader. Previously imported files and existing projects remain accessible after Premium ends.</string>
+    <string name="restore">Restore Amazon purchases</string><string name="billing_unconfigured">Subscriptions are unavailable in this build. Your offline workspace is ready to use.</string>
+    <string name="billing_failed">Amazon purchases could not be loaded. Check your connection and Amazon account, then try restoring.</string>
+    <string name="verification_failed">Purchase verification is pending. Restore purchases when connected. Your project data is safe.</string>
+    <string name="purchase_checked">Amazon receipt checked.</string>
+    <string name="subscription_terms">Subscriptions renew through Amazon. Review the billing period and price in Amazon’s purchase confirmation. Manage or cancel in your Amazon account subscriptions. Verified Premium works offline for up to 72 hours before another verification is required. No trial is advertised.</string>
+    <string name="privacy">Your patterns and project data stay on this device. No account, advertising or analytics. Only Amazon receipt and account identifiers go to the purchase verification service. Android app data is removed on uninstall; keep original source files or export them before uninstalling.</string>
+    <string name="previous">Previous</string><string name="next">Next</string><string name="page_number">%1$d / %2$d</string><string name="fit">Fit</string><string name="zoom_in">Zoom +</string><string name="pattern_page">Pattern page %1$d</string>
+    <string name="viewer_error">This pattern could not be rendered. Its original file is preserved. Export it to open in another reader.</string>
+</resources>

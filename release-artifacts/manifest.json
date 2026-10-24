@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "versionCode": 1,
+  "applicationId": "com.craftfolio.patterns",
+  "databaseSchema": 2,
+  "status": "Development build. Commercial release acceptance incomplete.",
+  "artifacts": [
+    {
+      "file": "Craftfolio-1.0.0-debug.apk",
+      "bytes": 17469484,
+      "sha256": "5a80e0e3731f286497be86f4e17a7ae605cbb90b37ea8d1418d5a8955f1e55fd",
+      "signing": "Android development key; testing only"
+    },
+    {
+      "file": "Craftfolio-1.0.0-unsigned.apk",
+      "bytes": 7273641,
+      "sha256": "b3aa7bf58c99a54b23a21fc5686e5adbb7ec1af396600e2c2c195b1acb7b7e8f",
+      "signing": "Unsigned; requires developer-owned release key"
+    }
+  ],
+  "checks": {
+    "jvm_tests": 4,
+    "fire_instrumentation_tests": 7,
+    "receipt_policy_tests": 6,
+    "lint_errors": 0,
+    "lint_warnings": 16,
+    "offline_normal_close": "pass on physical Fire HD 10",
+    "offline_force_stop": "pass; exact database and file-hash equality",
+    "offline_device_restart": "pass; changed boot ID and exact state equality",
+    "store_capture_jobs": 2,
+    "screenshots": 8,
+    "asset_validation": "pass; signed-release recapture still required"
+  },
+  "release_gates": [
+    "Amazon public key, products and verification service deployment",
+    "App Tester/RVS sandbox and Live App Testing",
+    "Developer signing key, support details and hosted privacy policy",
+    "Fire OS 8 and 7/8-inch device QA; screen-reader and performance matrix"
+  ]
+}
