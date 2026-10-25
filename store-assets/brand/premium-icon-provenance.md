@@ -1,0 +1,23 @@
+# Premium subscription product icon
+
+Created 24 October 2026 at the user's request to make the subscription icon look premium. The user's follow-up request also applies the craftsmanship design to Craftfolio's main Android launcher icon and main store icon assets.
+
+- `craftfolio-premium-master.png`: vibrant coral, apricot, golden-yellow and teal yarn, flowing thread and a gold crochet hook on luminous deep teal. The user requested a more exciting and creative treatment after the gold craftsmanship concept. Generated with the built-in image-generation tool and visually inspected.
+- `craftfolio-premium-512.png` and `craftfolio-premium-114.png`: PNG exports, downsampled with high-quality bicubic interpolation and stored with RGBA channels for Amazon's product icon slots.
+- `craftfolio-512.png` and `craftfolio-114.png` now use the same craftsmanship design for the main app listing. The Android launcher drawable references the matching `drawable-nodpi/craftfolio_icon.png`.
+
+Final PNG SHA-256: 512px `2507bae1eb87372b70e12ad582add55771968bcb43f1627078223b8d98b3cdb7`; 114px `86cad9a5c4e9f8dffeab6aee3a5d6654606b95286d96aa15c556e80ee6ec4582`. Both exports have RGBA channels. The earlier gold-only concept remains in the image-generation cache rather than being the active asset.
+
+No text, crowns, unrelated features, patterns, screenshots or marketplace content are depicted. The master and both exports are saved in this repository rather than relying on the generated-image cache.
+
+Both sizes were uploaded to the Premium subscription's English (U.K.) and English (U.S.) image slots and visually verified after reloading the console. Evidence is in `test-evidence/amazon-console/premium-icon-uk.png` and `premium-icon-us.png`. The subscription remains unsubmitted. The updated Android launcher icon requires installation of the rebuilt APK to appear on a device; existing release-artifacts files predate this change.
+
+The same 512px/114px images are also saved in the main Appstore draft's Tablet assets icon slots (US default artwork applies to other marketplaces without localized artwork), verified after reloading. Evidence: `test-evidence/amazon-console/main-icon-update.png`. Debug and unsigned release builds pass (`test-evidence/main-icon-build.log`); the debug APK contains the new bitmap and launcher drawable wrapper. No device installation or store submission was performed for this icon update.
+
+The subsequent colourful revision is built successfully in both debug and unsigned release variants (`test-evidence/exciting-icon-build.log`). Its main-listing upload evidence is `test-evidence/amazon-console/exciting-main-icons.png`; earlier screenshots named above depict the previous gold version and are historical evidence. The 114px colourful export was visually inspected at native size.
+
+The colourful revision is also saved in both Premium locales and both icon sizes, verified after reloading. Evidence: `test-evidence/amazon-console/exciting-premium-us.png` and `exciting-premium-uk.png`. Amazon's main listing controls overlapped at the narrow panel width, so a temporary desktop-width viewport was needed to replace the icons; it was reset afterward. No products or app releases were submitted.
+
+Subsequently installed the colourful debug APK on the user's KFTRWI Fire tablet using `adb install -r` (24 October 2026). Installation succeeded, the app Activity launched, and the installed base APK SHA-256 matches `8bb4c24ada59c38587889116c8d09fa992881bb44a64d1c147ba8ffd39fe234c`. Android App info visibly shows the new icon (`test-evidence/fire-icon-app-info.png`), and that screen was left open for the user. Fire's Home/Recent Items still display a cached original book icon. Fire OS refused to restart its protected launcher, so no launcher data was cleared and no device restart was performed. App data was not cleared or uninstalled. This does not constitute a billing test.
+
+On the user's subsequent continuation, restarted the tablet to refresh the launcher. After the user unlocked it and approved USB debugging, boot ID changed from `c08e8309-06f1-40d5-aa94-f137034deb0e` to `cc9b6cc9-1f59-40ac-b70c-fc4e44e3b01d`. The Home Continue row now visibly shows the colourful Craftfolio icon (`test-evidence/fire-icon-after-reboot.png`). Craftfolio opened successfully and displayed the existing pattern library and Continue project card (`test-evidence/fire-app-opened-after-icon-reboot.png`). The app was left open. This resolves the cached launcher-icon limitation above; it is not a repeat of the full offline persistence acceptance suite or an Amazon billing test.

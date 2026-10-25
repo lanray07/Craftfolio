@@ -10,3 +10,6 @@ local.properties
 *.log
 test-evidence/
 .tools/
+**/node_modules/
+**/.wrangler/
+**/.dev.vars*

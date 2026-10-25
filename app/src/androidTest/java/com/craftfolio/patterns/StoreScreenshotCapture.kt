@@ -15,6 +15,8 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import java.io.File
+import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.flow.first
 
 /** Explicit screenshot job: skipped in the normal test suite. Captures actual screen pixels. */
 @RunWith(AndroidJUnit4::class)
@@ -24,8 +26,14 @@ class StoreScreenshotCapture {
         val args = InstrumentationRegistry.getArguments()
         assumeTrue(args.getString("storeCapture") == "true")
         val locale = args.getString("storeLocale") ?: "en-GB"
-        require(locale in listOf("en-GB", "en-US"))
+        require(locale in AppLanguages.supported)
+        val originalLanguage = AppLanguages.selected(ui.activity)
         StoreFixtureTest().seedOriginalPatterns()
+        val repo = (ui.activity.application as CraftfolioApp).repository
+        val (count, expectedPage) = runBlocking {
+            val project = repo.dao.projects().first().first { it.name == "My autumn scarf" }
+            repo.dao.counters().first().first { it.projectId == project.id }.value.toString() to project.page + 1
+        }
         val originalOrientation = ui.activity.requestedOrientation
         fun orientation(value: Int, expected: Int) {
             ui.runOnUiThread { ui.activity.requestedOrientation = value }
@@ -34,6 +42,11 @@ class StoreScreenshotCapture {
         }
         fun capture(name: String, expectedText: String) {
             ui.onNodeWithText(expectedText).assertIsDisplayed()
+            if (name == "02-knitting-row-counter" || name == "03-split-view-workspace") {
+                val pageDescription = ui.activity.getString(R.string.pattern_page, expectedPage)
+                ui.waitUntil(20000) { ui.onAllNodesWithContentDescription(pageDescription).fetchSemanticsNodes().isNotEmpty() }
+                ui.onNodeWithContentDescription(pageDescription).assertIsDisplayed()
+            }
             ui.runOnUiThread {
                 (ui.activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager)
                     .hideSoftInputFromWindow(ui.activity.window.decorView.windowToken, 0)
@@ -49,18 +62,25 @@ class StoreScreenshotCapture {
             bitmap.recycle()
         }
         try {
+            ui.onNodeWithTag("language-selector").performClick()
+            ui.onNodeWithTag("language-$locale").performScrollTo().performClick()
+            ui.waitUntil(15000) { ui.activity.resources.configuration.locales[0].toLanguageTag() == locale }
             orientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT, Configuration.ORIENTATION_PORTRAIT)
             ui.onNode(hasSetTextAction()).performTextInput("scarf")
             ui.waitUntil(10000) { ui.onAllNodesWithText("Moss stitch scarf").fetchSemanticsNodes().isNotEmpty() }
             capture("01-pattern-library", "Moss stitch scarf")
-            ui.onNodeWithText("Projects").performClick()
+            ui.onNodeWithText(ui.activity.getString(R.string.projects)).performClick()
             ui.onNodeWithText("My autumn scarf").performClick()
-            ui.onNodeWithText("42").assertIsDisplayed()
-            capture("02-knitting-row-counter", "42")
+            ui.onNodeWithText(count).assertIsDisplayed()
+            capture("02-knitting-row-counter", count)
             orientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE, Configuration.ORIENTATION_LANDSCAPE)
-            capture("03-split-view-workspace", "42")
-            ui.onNodeWithText("Back").performClick()
+            capture("03-split-view-workspace", count)
+            ui.onNodeWithText(ui.activity.getString(R.string.back)).performClick()
             capture("04-project-tracker", "My autumn scarf")
-        } finally { ui.runOnUiThread { ui.activity.requestedOrientation = originalOrientation } }
+        } finally {
+            AppLanguages.save(ui.activity, originalLanguage)
+            ui.runOnUiThread { ui.activity.requestedOrientation = originalOrientation }
+            ui.activityRule.scenario.recreate()
+        }
     }
 }

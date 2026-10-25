@@ -1,0 +1,55 @@
+{
+  "locale": "de-DE",
+  "ui_language": "de-DE",
+  "locale_control": "Real in-app language selector; previous preference restored after capture",
+  "sample_content": "Original English CC0 sample documents and user-entered project text are not automatically translated",
+  "model": "KFTRWI",
+  "api": "28",
+  "screenshots": [
+    {
+      "file": "01-pattern-library.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "09d7ce6afbd807e128675897af47d4fc863eb607378de81aa705c8d9dfd136e0",
+      "headline": "PDF-Anleitungen \u00fcbersichtlich sammeln",
+      "benefit": "PDF-Anleitungen \u00fcbersichtlich sammeln",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "02-knitting-row-counter.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "ee83ffa643a51badbc10ea34dc59ae7491c641341a46c0c546b22bc5eed48325",
+      "headline": "Deinen Reihenstand immer im Blick",
+      "benefit": "Deinen Reihenstand immer im Blick",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "03-split-view-workspace.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "114d18c9c517895e5eeb2a68ac8045cd64431653a2754567d48a484d867da712",
+      "headline": "Anleitung und Z\u00e4hler nebeneinander",
+      "benefit": "Anleitung und Z\u00e4hler nebeneinander",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "04-project-tracker.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "659e6de0a084d141329a254b1415f36bee13a51c9dfcc12ac3e7d6bd1e0513b2",
+      "headline": "Jedes Handarbeitsprojekt im Blick",
+      "benefit": "Jedes Handarbeitsprojekt im Blick",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    }
+  ],
+  "review": "Native assertions passed; visual review required. Captions are separate copy, not image overlays."
+}

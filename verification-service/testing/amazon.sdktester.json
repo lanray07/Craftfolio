@@ -1,0 +1,20 @@
+{
+  "craftfolio_premium_monthly": {
+    "itemType": "SUBSCRIPTION",
+    "price": 1.99,
+    "title": "Craftfolio Premium Monthly",
+    "description": "Monthly Premium access: unlimited imports and unfinished projects, plus multiple row counters.",
+    "smallIconUrl": "https://raw.githubusercontent.com/lanray07/Craftfolio/main/store-assets/brand/craftfolio-114.png",
+    "subscriptionParent": "craftfolio_premium",
+    "term": "Monthly"
+  },
+  "craftfolio_premium_annual": {
+    "itemType": "SUBSCRIPTION",
+    "price": 14.99,
+    "title": "Craftfolio Premium Annual",
+    "description": "Annual Premium access: unlimited imports and unfinished projects, plus multiple row counters.",
+    "smallIconUrl": "https://raw.githubusercontent.com/lanray07/Craftfolio/main/store-assets/brand/craftfolio-114.png",
+    "subscriptionParent": "craftfolio_premium",
+    "term": "Annually"
+  }
+}

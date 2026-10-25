@@ -82,18 +82,18 @@ class Repository(val context: Context, val db: CraftDatabase) {
     val dao = db.dao()
     private val imports = Mutex()
     suspend fun import(uri: Uri, craft: String, premium: Boolean) = withContext(Dispatchers.IO) { imports.withLock {
-        check(premium || dao.patternCount() < 20) { "Free library limit reached. Your existing files remain available." }
+        requireUser(premium || dao.patternCount() < 20, R.string.free_library_limit)
         val id = UUID.randomUUID().toString()
         val dir = File(context.filesDir, "patterns").apply { mkdirs() }
         val temporary = File(dir, "$id.part")
         val destination = File(dir, id)
         try {
             context.contentResolver.openInputStream(uri).use { input ->
-                requireNotNull(input) { "Cannot read selected file" }
+                if (input == null) throw UserFacingFailure(R.string.selected_file_unreadable)
                 FileOutputStream(temporary).use { out ->
                     val buffer = ByteArray(65536); var total = 0L
                     while (true) { val n = input.read(buffer); if (n < 0) break
-                        total += n; require(total <= 100L * 1024 * 1024) { "Pattern exceeds 100 MB" }; out.write(buffer, 0, n) }
+                        total += n; requireUser(total <= 100L * 1024 * 1024, R.string.pattern_too_large); out.write(buffer, 0, n) }
                     out.fd.sync()
                 }
             }
@@ -104,28 +104,29 @@ class Repository(val context: Context, val db: CraftDatabase) {
             } else {
                 val options = BitmapFactory.Options().apply { inJustDecodeBounds = true }
                 BitmapFactory.decodeFile(temporary.path, options)
-                require(options.outWidth > 0 && options.outHeight > 0 && options.outMimeType in listOf("image/jpeg", "image/png", "image/webp")) { "Choose a valid PDF, JPEG, PNG or WebP pattern" }
+                requireUser(options.outWidth > 0 && options.outHeight > 0 && options.outMimeType in listOf("image/jpeg", "image/png", "image/webp"), R.string.invalid_pattern)
                 options.outMimeType
             }
-            require(temporary.renameTo(destination)) { "Could not preserve imported file" }
+            requireUser(temporary.renameTo(destination), R.string.import_preservation_failed)
             val directoryFd = android.system.Os.open(dir.path, android.system.OsConstants.O_RDONLY, 0)
             try { android.system.Os.fsync(directoryFd) } finally { android.system.Os.close(directoryFd) }
-            var title = uri.lastPathSegment?.substringBeforeLast('.')?.take(180)?.ifBlank { "Pattern" } ?: "Pattern"
+            val fallbackTitle by lazy { AppLanguages.wrap(context).getString(R.string.default_pattern) }
+            var title = uri.lastPathSegment?.substringBeforeLast('.')?.take(180)?.ifBlank { fallbackTitle } ?: fallbackTitle
             if (uri.scheme == "content") context.contentResolver.query(uri, arrayOf(OpenableColumns.DISPLAY_NAME), null, null, null)?.use {
-                if (it.moveToFirst()) title = it.getString(0).substringBeforeLast('.').take(180).ifBlank { "Pattern" }
+                if (it.moveToFirst()) title = it.getString(0).substringBeforeLast('.').take(180).ifBlank { fallbackTitle }
             }
             dao.insert(Pattern(id, title, craft, destination.path, mime, destination.length()))
         } catch (e: Exception) { temporary.delete(); /* An unregistered final file is retained for recovery. */ throw e }
     } }
-    suspend fun create(pattern: Pattern, name: String, materials: String, premium: Boolean): String = db.withTransaction {
+    suspend fun create(pattern: Pattern, name: String, materials: String, premium: Boolean, counterName: String): String = db.withTransaction {
         require(name.isNotBlank())
-        check(premium || dao.unfinishedCount() < 3) { "Free plan supports three unfinished projects" }
+        requireUser(premium || dao.unfinishedCount() < 3, R.string.free_project_limit)
         val id = UUID.randomUUID().toString()
         dao.insert(Project(id, pattern.id, name.trim(), materials = materials))
-        dao.insert(Counter(UUID.randomUUID().toString(), id, "Rows")); id
+        dao.insert(Counter(UUID.randomUUID().toString(), id, counterName)); id
     }
     suspend fun addCounter(projectId: String, name: String, premium: Boolean) = db.withTransaction {
-        check(premium || dao.counterCount(projectId) < 1) { "Additional counters require Premium" }
+        requireUser(premium || dao.counterCount(projectId) < 1, R.string.additional_counters_premium)
         require(name.isNotBlank()); dao.insert(Counter(UUID.randomUUID().toString(), projectId, name.trim()))
     }
     suspend fun change(id: String, delta: Int) = db.withTransaction {

@@ -51,7 +51,7 @@ class StoreFixtureTest {
             source.delete()
         }
         val pattern = repo.dao.patterns().first().first { it.title == names[0] }
-        val id = repo.create(pattern, "My autumn scarf", "200 g forest green wool\n5 mm knitting needles", false)
+        val id = repo.create(pattern, "My autumn scarf", "200 g forest green wool\n5 mm knitting needles", false, "Rows")
         val counter = repo.dao.counters().first().first { it.projectId == id }
         repeat(42) { repo.change(counter.id, 1) }
         repo.note(id, "Finished the first repeat. Start the next row with a purl stitch.")

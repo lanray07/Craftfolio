@@ -1,0 +1,55 @@
+{
+  "locale": "nl-NL",
+  "ui_language": "nl-NL",
+  "locale_control": "Real in-app language selector; previous preference restored after capture",
+  "sample_content": "Original English CC0 sample documents and user-entered project text are not automatically translated",
+  "model": "KFTRWI",
+  "api": "28",
+  "screenshots": [
+    {
+      "file": "01-pattern-library.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "166b2070a5a35a154bdfd0dded7fcb7071f6fabbfa9b76abe064747cdf546827",
+      "headline": "Je eigen PDF-patronenbibliotheek",
+      "benefit": "Je eigen PDF-patronenbibliotheek",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "02-knitting-row-counter.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "c16d5d2c5554c9c5d4fe7023c4d5e9da9aa08b9aeeef0a0a3201902ccfa5c3d5",
+      "headline": "Verlies je toerentelling niet",
+      "benefit": "Verlies je toerentelling niet",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "03-split-view-workspace.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "c46890b6b1929810e66bd9af1ee266f8afe3a58bb14be4136a03368b5b4ccdea",
+      "headline": "Patronen en tellers naast elkaar",
+      "benefit": "Patronen en tellers naast elkaar",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "04-project-tracker.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "5903f7c40099af8ec4b5196ff334c95b88e520fb9207496154871d64b14e54e9",
+      "headline": "Hervat elk creatief project",
+      "benefit": "Hervat elk creatief project",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    }
+  ],
+  "review": "Native assertions passed; visual review required. Captions are separate copy, not image overlays."
+}

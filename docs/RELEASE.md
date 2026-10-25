@@ -1,8 +1,10 @@
 # Version 1.0 release gates
 
-Status: DEVELOPMENT — not approved for Appstore submission.
+Status: SUBMITTED TO AMAZON — 25 October 2026; review/publication pending.
 
-## Required acceptance journey
+25 October billing update: free Cloudflare receipt verification/privacy hosting is deployed; both release APKs build and signatures verify. Private LAT is live. The Amazon-installed non-debuggable build passes monthly purchase and receipt verification using the real staging secret, Restore, offline force-stop/reopen, and test subscription reset followed by Restore to Free. Annual purchase, receipt verification, Restore and offline force-stop/reopen now PASS after owner account authentication. LAT account switching, real refund/expiry and the remaining device/accessibility/performance matrix remain incomplete. Owner export certification was confirmed; billing-identifier disclosure answered Yes. Original debug data was privately backed up and verified before owner-authorized replacement. See TEST-RESULTS.md and SIGNING.md. Owner approved public export certification and submission. Amazon confirms the production app was successfully submitted on 25 October 2026. Premium was promoted from TEST and is Approved. Signed LAT core project normal closure, forced termination and physical reboot offline all pass; original PDF export after downgrade matches source bytes. Remaining coverage limitations below were disclosed to the owner; submission does not establish Amazon approval or physical certification of every target model.
+
+## Acceptance journey (completed on Fire HD 10; repeat on additional models)
 
 On each supported Fire tablet/OS, in portrait and landscape:
 
@@ -22,7 +24,7 @@ On each supported Fire tablet/OS, in portrait and landscape:
 - API 26+ targets Android-compatible Fire OS 7/8; Fire OS 5 and Vega OS are excluded. Minimum SDK alone is not a compatibility certification.
 - No encrypted backup/restore or multi-device synchronisation. App-private data is lost on uninstall; original-file export is available.
 - No PDF text search, annotations, photo journal, voice, AI, inventory, shopping list, marketplace or packs.
-- Multiple counters and billing code require device and store verification as documented. A configured verifier and app public key are required to offer purchases.
+- Multiple counters, signed LAT billing and the offline project journey pass on the recorded Fire HD 10. Additional model coverage and the remaining verification limits are documented in TEST-RESULTS.md.
 - Screen reader, low-memory, damaged PDF and all device-size claims require recorded results; do not advertise untested compatibility.
 
 ## Post-MVP backlog (blocked by Phase 1 acceptance)

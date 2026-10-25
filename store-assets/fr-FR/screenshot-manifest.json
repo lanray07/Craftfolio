@@ -1,0 +1,55 @@
+{
+  "locale": "fr-FR",
+  "ui_language": "fr-FR",
+  "locale_control": "Real in-app language selector; previous preference restored after capture",
+  "sample_content": "Original English CC0 sample documents and user-entered project text are not automatically translated",
+  "model": "KFTRWI",
+  "api": "28",
+  "screenshots": [
+    {
+      "file": "01-pattern-library.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "38d220407b376597d424af51b9e1a2bc5b076718812393fbfefe023f7fb05328",
+      "headline": "Votre biblioth\u00e8que de mod\u00e8les PDF",
+      "benefit": "Votre biblioth\u00e8que de mod\u00e8les PDF",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "02-knitting-row-counter.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "e9962bcfd3ed968470c3e2563a85bfdf2ec8b3c78b67f54c294aa723edbbc1ac",
+      "headline": "Gardez le fil de vos rangs",
+      "benefit": "Gardez le fil de vos rangs",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "03-split-view-workspace.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "c075f818f3f678450bd02022e7b363e9f1f8d1f56f1943b2cd98aa60d3b3da76",
+      "headline": "Mod\u00e8le et compteurs c\u00f4te \u00e0 c\u00f4te",
+      "benefit": "Mod\u00e8le et compteurs c\u00f4te \u00e0 c\u00f4te",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "04-project-tracker.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "580eec34398fd987a2bdeba00fd5ffc17fd7b83a3fdc90e49d73ecc5b06d19eb",
+      "headline": "Retrouvez chaque projet cr\u00e9atif",
+      "benefit": "Retrouvez chaque projet cr\u00e9atif",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    }
+  ],
+  "review": "Native assertions passed; visual review required. Captions are separate copy, not image overlays."
+}

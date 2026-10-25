@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Craftfolio</string>
+    <string name="tagline">Tous vos modèles conservés. Tous vos projets suivis.</string>
+    <string name="library">Modèles</string><string name="projects">Projets</string><string name="premium">Premium</string><string name="free">Gratuit</string>
+    <string name="back">Retour</string><string name="edit_project">Modifier le projet</string><string name="export_original">Exporter le fichier original</string>
+    <string name="active">En cours</string><string name="paused">En pause</string><string name="completed">Terminé</string>
+    <string name="minus">−1</string><string name="plus">+1</string><string name="undo">Annuler le comptage</string><string name="add_counter">Ajouter un compteur</string>
+    <string name="materials">Matériel nécessaire</string><string name="no_materials">Aucun matériel enregistré. Ajoutez-le dans « Modifier le projet ».</string>
+    <string name="notes">Notes du projet</string><string name="add_note">Ajouter une note</string>
+    <string name="continue_project">Reprendre le projet</string><string name="search">Rechercher un modèle ou une activité</string>
+    <string name="all">Tous</string><string name="knitting">Tricot</string><string name="crochet">Crochet</string><string name="sewing">Couture</string><string name="other">Autre</string>
+    <string name="import_craft">Activité à importer : %1$s</string><string name="import_pattern">Importer un modèle</string>
+    <string name="empty_library">Une place pour votre prochaine idée. Importez un modèle PDF ou une image pour créer votre bibliothèque privée hors ligne.</string>
+    <string name="image">Image</string><string name="start_project">Créer un projet</string><string name="open_pattern">Ouvrir le modèle</string>
+    <string name="empty_projects">Créez un projet depuis votre bibliothèque. Compteurs, notes et position de lecture restent réunis.</string>
+    <string name="action_failed">Impossible d’enregistrer cette action</string><string name="close">Fermer</string><string name="text">Texte</string><string name="save">Enregistrer</string><string name="cancel">Annuler</string><string name="project_name">Nom du projet</string>
+    <string name="premium_title">Plus de place pour créer</string>
+    <string name="premium_monthly">Premium · Mensuel</string><string name="premium_annual">Premium · Annuel</string>
+    <string name="premium_description">Premium permet d’importer un nombre illimité de modèles, de créer autant de projets que souhaité et d’utiliser plusieurs compteurs nommés par projet.</string>
+    <string name="free_description">La version gratuite comprend 20 imports de modèles, 3 projets non terminés, un compteur par projet, les notes, le matériel et la lecture en vue partagée. Les fichiers déjà importés et les projets existants restent accessibles à la fin de Premium.</string>
+    <string name="restore">Restaurer les achats Amazon</string><string name="billing_unconfigured">Les abonnements ne sont pas disponibles dans cette version. Votre espace hors ligne est prêt à être utilisé.</string>
+    <string name="billing_failed">Impossible de charger les achats Amazon. Vérifiez votre connexion et votre compte Amazon, puis réessayez de restaurer les achats.</string>
+    <string name="verification_failed">La vérification de l’achat est en attente. Restaurez vos achats avec une connexion Internet. Vos données de projet sont conservées.</string>
+    <string name="purchase_checked">Reçu Amazon vérifié.</string>
+    <string name="subscription_terms">Les abonnements sont renouvelés automatiquement par Amazon. Vérifiez la période et le prix dans la confirmation d’achat Amazon. Gérez ou résiliez votre abonnement dans votre compte Amazon. Premium vérifié fonctionne hors ligne pendant 72 heures au maximum avant une nouvelle vérification. Aucune période d’essai gratuite n’est proposée.</string>
+    <string name="privacy">Vos modèles et projets restent sur cet appareil. Aucun compte Craftfolio, aucune publicité ni analyse d’utilisation. Seuls les identifiants de compte et de reçu Amazon sont transmis au service de vérification des achats. La désinstallation supprime les données locales. Conservez vos fichiers sources ou exportez-les au préalable.</string>
+    <string name="previous">Précédente</string><string name="next">Suivante</string><string name="page_number">%1$d / %2$d</string><string name="fit">Ajuster</string><string name="zoom_in">Zoom +</string><string name="pattern_page">Modèle, page %1$d</string>
+    <string name="viewer_error">Impossible d’afficher ce modèle. Le fichier original est conservé. Exportez-le pour l’ouvrir dans une autre application.</string>
+    <string name="reading_position_failed">Impossible d’enregistrer votre position de lecture. Réessayez.</string>
+    <string name="export_failed">Impossible d’exporter ce fichier. Choisissez un autre emplacement et réessayez.</string>
+    <string name="free_library_limit">La limite de la bibliothèque gratuite est atteinte. Vos fichiers existants restent accessibles.</string>
+    <string name="selected_file_unreadable">Impossible de lire le fichier sélectionné. Choisissez un fichier accessible et réessayez.</string>
+    <string name="pattern_too_large">Ce modèle dépasse la limite d’import de 100 Mo.</string>
+    <string name="invalid_pattern">Choisissez un modèle valide au format PDF, JPEG, PNG ou WebP.</string>
+    <string name="import_preservation_failed">Impossible d’enregistrer le fichier importé. Le fichier source n’a pas été modifié.</string>
+    <string name="free_project_limit">La version gratuite permet trois projets non terminés. Terminez un projet ou choisissez Premium pour en ajouter.</string>
+    <string name="additional_counters_premium">Les compteurs supplémentaires nécessitent Premium. Vos compteurs existants restent accessibles.</string>
+    <string name="language">Langue</string><string name="language_system">Utiliser la langue de la tablette</string><string name="rows">Rangs</string><string name="default_pattern">Modèle</string>
+    <string name="page_loading">%1$d / …</string>
+</resources>

@@ -1,0 +1,55 @@
+{
+  "locale": "en-IN",
+  "ui_language": "en-IN",
+  "locale_control": "Real in-app language selector; previous preference restored after capture",
+  "sample_content": "Original English CC0 sample documents and user-entered project text are not automatically translated",
+  "model": "KFTRWI",
+  "api": "28",
+  "screenshots": [
+    {
+      "file": "01-pattern-library.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "0a9b531870e6dae26d705da696cafa67658655a27b74b737f52736558ced8b5a",
+      "headline": "Your personal PDF pattern library",
+      "benefit": "Your personal PDF pattern library",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "02-knitting-row-counter.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "1ec76ca3571268d365945f24786a06aaf1e1ec6bd325d7c084eba19b588718bf",
+      "headline": "Never lose your row count",
+      "benefit": "Never lose your row count",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "03-split-view-workspace.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "b2cbb5d0bae2d6f20888527fcea008f574f31b0bea04637a8bd20627be450f7c",
+      "headline": "Patterns and counters side by side",
+      "benefit": "Patterns and counters side by side",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "04-project-tracker.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "d031c36ffc619b5868fdcce9824e53f9d1998d9fb7c3941611d378bcd5698595",
+      "headline": "Resume every creative project",
+      "benefit": "Resume every creative project",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    }
+  ],
+  "review": "Native assertions passed; visual review required. Captions are separate copy, not image overlays."
+}

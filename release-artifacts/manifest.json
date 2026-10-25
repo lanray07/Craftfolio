@@ -3,7 +3,7 @@
   "versionCode": 1,
   "applicationId": "com.craftfolio.patterns",
   "databaseSchema": 2,
-  "status": "Development build. Commercial release acceptance incomplete.",
+  "status": "Historical baseline; see supersededBy for current billing builds",
   "artifacts": [
     {
       "file": "Craftfolio-1.0.0-debug.apk",
@@ -36,5 +36,6 @@
     "App Tester/RVS sandbox and Live App Testing",
     "Developer signing key, support details and hosted privacy policy",
     "Fire OS 8 and 7/8-inch device QA; screen-reader and performance matrix"
-  ]
+  ],
+  "supersededBy": "billing-2026-10-25/manifest.json"
 }

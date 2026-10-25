@@ -1,0 +1,30 @@
+{
+  "status": "Borrador localizado. Faltan las pruebas de facturación de Amazon antes de publicar en producción.",
+  "title": "Craftfolio: patrones y proyectos",
+  "short_description": "Guarda patrones PDF, organiza proyectos de tejido con agujas y crochet y reúne contadores de filas, materiales y notas sin conexión.",
+  "long_description": "Todos tus patrones guardados. Todos tus proyectos al día.\n\nCraftfolio reúne tus patrones PDF e imágenes, tus proyectos creativos y tus contadores de filas en un espacio tranquilo para tabletas Fire compatibles.\n\nTu biblioteca personal de patrones\nImporta patrones PDF, JPEG, PNG y WebP. Busca por título y filtra por tejido con agujas, crochet o costura. Los archivos originales se copian al almacenamiento local de la aplicación, de modo que podrás leerlos aunque la ubicación de origen deje de estar disponible. Exporta un original siempre que lo necesites.\n\nLee y cuenta a la vez\nAmplía y desplaza el patrón, pasa de una página PDF a otra y vuelve a la posición de lectura guardada en tu proyecto. En pantallas anchas, consulta el patrón y los contadores uno al lado del otro. Los botones grandes de suma y resta facilitan el recuento, y la opción de deshacer corrige un toque accidental.\n\nAcompaña cada proyecto\nCrea, edita, pausa, retoma y termina proyectos. Guarda los materiales necesarios y las notas junto al patrón. La biblioteca, los contadores y las notas funcionan sin conexión, sin cuenta de Craftfolio ni Google Play Services.\n\nGratis y Premium\nLa versión gratuita incluye hasta 20 importaciones de patrones, 3 proyectos sin terminar y un contador por proyecto. Premium permite importar patrones y crear proyectos sin límite, además de usar varios contadores con nombre. Los archivos importados, los proyectos y los contadores existentes siguen disponibles cuando finaliza Premium. Amazon gestiona las compras y las renovaciones automáticas. Premium verificado requiere conexión al menos cada 72 horas para una nueva comprobación. Tus archivos personales siguen disponibles sin conexión.\n\nPrivacidad desde el principio\nSin publicidad, redes sociales ni análisis de uso. Tus patrones y notas permanecen en el dispositivo. La verificación de compras solo utiliza identificadores de cuenta y recibo de Amazon. Al desinstalar se borran los datos locales: conserva los archivos de origen o exporta los originales antes.\n\nElige el idioma desde la aplicación. Los patrones importados y los textos personales no se traducen automáticamente.\n\nUn espacio pensado para tu próximo proyecto creativo.",
+  "feature_bullets": [
+    "Importa y busca patrones PDF e imágenes",
+    "Organiza proyectos de tejido con agujas, crochet y costura sin conexión",
+    "Lee patrones junto a contadores de filas grandes con opción de deshacer",
+    "Guarda notas, materiales y posición de lectura por proyecto",
+    "Conserva el acceso a los archivos importados cuando finalice Premium"
+  ],
+  "keywords": [
+    "contador de filas",
+    "patrones de tejido con agujas",
+    "patrones crochet",
+    "biblioteca PDF",
+    "proyectos manualidades",
+    "patrones costura",
+    "tejer sin conexión"
+  ],
+  "premium_title": "Craftfolio Premium",
+  "premium_description": "Amplía tu espacio personal de tejido con agujas y crochet con importaciones de patrones y proyectos sin terminar ilimitados, además de varios contadores de filas por proyecto, según el almacenamiento disponible. Organiza tus propios patrones PDF e imágenes y sigue tus proyectos sin conexión. Los planes mensual y anual ofrecen las mismas funciones Premium. Los patrones importados y los datos existentes siguen disponibles al finalizar la suscripción. No se incluyen patrones. El pago y la renovación automática siguen las condiciones de la suscripción de Amazon seleccionada.",
+  "screenshot_captions": [
+    "Tu biblioteca de patrones PDF",
+    "No pierdas la cuenta de las filas",
+    "Patrones y contadores juntos",
+    "Retoma cada proyecto creativo"
+  ]
+}

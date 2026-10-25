@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Craftfolio</string>
+    <string name="tagline">Jede Anleitung gespeichert. Jedes Projekt im Blick.</string>
+    <string name="library">Anleitungen</string><string name="projects">Projekte</string><string name="premium">Premium</string><string name="free">Kostenlos</string>
+    <string name="back">Zurück</string><string name="edit_project">Projekt bearbeiten</string><string name="export_original">Original exportieren</string>
+    <string name="active">Aktiv</string><string name="paused">Pausiert</string><string name="completed">Abgeschlossen</string>
+    <string name="minus">−1</string><string name="plus">+1</string><string name="undo">Rückgängig</string><string name="add_counter">Zähler hinzufügen</string>
+    <string name="materials">Benötigtes Material</string><string name="no_materials">Noch kein Material erfasst. Ergänze es unter „Projekt bearbeiten“.</string>
+    <string name="notes">Projektnotizen</string><string name="add_note">Notiz hinzufügen</string>
+    <string name="continue_project">Projekt fortsetzen</string><string name="search">Anleitungen oder Handarbeiten suchen</string>
+    <string name="all">Alle</string><string name="knitting">Stricken</string><string name="crochet">Häkeln</string><string name="sewing">Nähen</string><string name="other">Sonstiges</string>
+    <string name="import_craft">Handarbeit beim Import: %1$s</string><string name="import_pattern">Anleitung importieren</string>
+    <string name="empty_library">Platz für deine nächste Idee. Importiere eine PDF- oder Bildanleitung für deine private Offline-Bibliothek.</string>
+    <string name="image">Bild</string><string name="start_project">Projekt starten</string><string name="open_pattern">Anleitung öffnen</string>
+    <string name="empty_projects">Starte ein Projekt aus deiner Bibliothek. Zähler, Notizen und Leseposition bleiben zusammen.</string>
+    <string name="action_failed">Änderung konnte nicht gespeichert werden</string><string name="close">Schließen</string><string name="text">Text</string><string name="save">Speichern</string><string name="cancel">Abbrechen</string><string name="project_name">Projektname</string>
+    <string name="premium_title">Mehr Raum für deine Ideen</string>
+    <string name="premium_monthly">Premium · Monatlich</string><string name="premium_annual">Premium · Jährlich</string>
+    <string name="premium_description">Premium bietet unbegrenzt viele Anleitungsimporte und Projekte sowie mehrere benannte Zähler pro Projekt.</string>
+    <string name="free_description">Kostenlos enthalten sind 20 Anleitungsimporte, 3 offene Projekte, ein Zähler pro Projekt, Notizen, Materialangaben und die geteilte Leseansicht. Bereits importierte Dateien und bestehende Projekte bleiben nach dem Ende von Premium zugänglich.</string>
+    <string name="restore">Amazon-Käufe wiederherstellen</string><string name="billing_unconfigured">Abonnements sind in dieser Version nicht verfügbar. Dein Offline-Arbeitsbereich ist einsatzbereit.</string>
+    <string name="billing_failed">Amazon-Käufe konnten nicht geladen werden. Prüfe deine Verbindung und dein Amazon-Konto und versuche erneut, Käufe wiederherzustellen.</string>
+    <string name="verification_failed">Die Kaufprüfung steht aus. Stelle deine Käufe mit Internetverbindung wieder her. Deine Projektdaten sind sicher.</string>
+    <string name="purchase_checked">Amazon-Kaufbeleg geprüft.</string>
+    <string name="subscription_terms">Abonnements verlängern sich über Amazon automatisch. Prüfe Laufzeit und Preis in der Kaufbestätigung von Amazon. Verwalte oder kündige das Abonnement in deinem Amazon-Konto. Verifiziertes Premium funktioniert bis zu 72 Stunden offline; danach ist eine erneute Prüfung nötig. Es wird kein kostenloser Testzeitraum angeboten.</string>
+    <string name="privacy">Deine Anleitungen und Projektdaten bleiben auf diesem Gerät. Kein Craftfolio-Konto, keine Werbung und keine Analysen. Nur Amazon-Konto- und Belegkennungen werden an den Dienst zur Kaufprüfung übertragen. Beim Deinstallieren werden lokale App-Daten gelöscht. Bewahre die Quelldateien auf oder exportiere sie vorher.</string>
+    <string name="previous">Vorherige</string><string name="next">Nächste</string><string name="page_number">%1$d / %2$d</string><string name="fit">Einpassen</string><string name="zoom_in">Zoom +</string><string name="pattern_page">Anleitung, Seite %1$d</string>
+    <string name="viewer_error">Diese Anleitung konnte nicht angezeigt werden. Die Originaldatei ist erhalten. Exportiere sie, um sie in einer anderen App zu öffnen.</string>
+    <string name="reading_position_failed">Die Leseposition konnte nicht gespeichert werden. Versuche es erneut.</string>
+    <string name="export_failed">Die Datei konnte nicht exportiert werden. Wähle einen anderen Speicherort und versuche es erneut.</string>
+    <string name="free_library_limit">Das kostenlose Bibliothekslimit ist erreicht. Deine vorhandenen Dateien bleiben zugänglich.</string>
+    <string name="selected_file_unreadable">Die ausgewählte Datei kann nicht gelesen werden. Wähle eine zugängliche Datei und versuche es erneut.</string>
+    <string name="pattern_too_large">Diese Anleitung überschreitet das Importlimit von 100 MB.</string>
+    <string name="invalid_pattern">Wähle eine gültige Anleitung als PDF-, JPEG-, PNG- oder WebP-Datei.</string>
+    <string name="import_preservation_failed">Die importierte Datei konnte nicht gespeichert werden. Die Quelldatei wurde nicht verändert.</string>
+    <string name="free_project_limit">Kostenlos sind drei offene Projekte möglich. Schließe ein Projekt ab oder wähle Premium, um weitere anzulegen.</string>
+    <string name="additional_counters_premium">Weitere Zähler erfordern Premium. Deine vorhandenen Zähler bleiben zugänglich.</string>
+    <string name="language">Sprache</string><string name="language_system">Sprache des Tablets verwenden</string><string name="rows">Reihen</string><string name="default_pattern">Anleitung</string>
+    <string name="page_loading">%1$d / …</string>
+</resources>

@@ -1,0 +1,55 @@
+{
+  "locale": "it-IT",
+  "ui_language": "it-IT",
+  "locale_control": "Real in-app language selector; previous preference restored after capture",
+  "sample_content": "Original English CC0 sample documents and user-entered project text are not automatically translated",
+  "model": "KFTRWI",
+  "api": "28",
+  "screenshots": [
+    {
+      "file": "01-pattern-library.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "2c7a78ef0ccf3303b613df9bea14bcccd9919f99ad45449ef2f53550047e440c",
+      "headline": "La tua biblioteca di schemi PDF",
+      "benefit": "La tua biblioteca di schemi PDF",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "02-knitting-row-counter.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "337a6f43fa79a25dcfc1fd8f5da2c43e727bd3081cf9d390333ef5a614d5627e",
+      "headline": "Non perdere il conto dei ferri",
+      "benefit": "Non perdere il conto dei ferri",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "03-split-view-workspace.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "c485d5333664c09dfe3964872057eaff9613e8c29a1db924e2151e061ef400e7",
+      "headline": "Schemi e contatori affiancati",
+      "benefit": "Schemi e contatori affiancati",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "04-project-tracker.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "cb6de4c41e000e24d82f00fb651f7a3487ee4ed8f74224015e1ed4d476591ed7",
+      "headline": "Riprendi ogni progetto creativo",
+      "benefit": "Riprendi ogni progetto creativo",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    }
+  ],
+  "review": "Native assertions passed; visual review required. Captions are separate copy, not image overlays."
+}

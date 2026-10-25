@@ -1,7 +1,8 @@
-const SKUS = new Set(['craftfolio_premium_monthly', 'craftfolio_premium_annual']);
+// RVS productId identifies the non-buyable parent, not the purchased term SKU.
+const PREMIUM_SUBSCRIPTION = 'craftfolio_premium';
 export function entitlement(receipt, receiptId, now, allowTestReceipts = false) {
   if (receipt.receiptId !== receiptId || receipt.productType !== 'SUBSCRIPTION' ||
-      !SKUS.has(receipt.productId) || (!allowTestReceipts && (receipt.testTransaction || receipt.betaProduct)) ||
+      receipt.productId !== PREMIUM_SUBSCRIPTION || (!allowTestReceipts && (receipt.testTransaction || receipt.betaProduct)) ||
       !Number.isFinite(receipt.purchaseDate) || receipt.purchaseDate > now) throw new Error('Invalid receipt');
   // RVS cancelDate is the loss-of-access date; stopping auto-renew does not revoke a paid term.
   const cancel = receipt.cancelDate;

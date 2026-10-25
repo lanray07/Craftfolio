@@ -1,0 +1,55 @@
+{
+  "locale": "es-MX",
+  "ui_language": "es-MX",
+  "locale_control": "Real in-app language selector; previous preference restored after capture",
+  "sample_content": "Original English CC0 sample documents and user-entered project text are not automatically translated",
+  "model": "KFTRWI",
+  "api": "28",
+  "screenshots": [
+    {
+      "file": "01-pattern-library.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "b3ad53927923f43a0f78440abf9ceabc64c96fdaf1f14cd8f9eb1e65db4610de",
+      "headline": "Tu biblioteca de patrones PDF",
+      "benefit": "Tu biblioteca de patrones PDF",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "02-knitting-row-counter.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "3d3b42614b349697f7e3b24ac1f0779ffba282256f1286bff65e61f0aa89eec3",
+      "headline": "No pierdas la cuenta de las filas",
+      "benefit": "No pierdas la cuenta de las filas",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "03-split-view-workspace.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "1a7636fb7dce3441d9b83e95f272ff750a151beca3db007a1fba6dd366ab6db4",
+      "headline": "Patrones y contadores juntos",
+      "benefit": "Patrones y contadores juntos",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "04-project-tracker.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "184c3c5e008dc952834f22a2b5299b72a791ea3e23a057dbdff30c7a2b53b274",
+      "headline": "Retoma cada proyecto creativo",
+      "benefit": "Retoma cada proyecto creativo",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    }
+  ],
+  "review": "Native assertions passed; visual review required. Captions are separate copy, not image overlays."
+}

@@ -1,0 +1,29 @@
+{
+  "status": "Localised draft; Amazon purchase tests and production acceptance pending.",
+  "title": "Craftfolio: receitas e projetos",
+  "short_description": "Organize receitas PDF, projetos de tricot e croché, contadores de carreiras, materiais e notas num espaço offline.",
+  "long_description": "Cada receita guardada. Cada projeto lembrado.\n\nCraftfolio reúne receitas e projetos de tricot, croché e costura em tablets Fire compatíveis. Importe seus próprios ficheiros PDF, JPEG, PNG e WebP, pesquise pelo título e filtre por técnica. Os originais são copiados para o armazenamento local e podem ser exportados a qualquer momento.\n\nLeia e conte ao mesmo tempo\nAmplie e mova a receita, navegue pelas páginas do PDF e retome a posição de leitura guardada. Em ecrãs largas, receita e contadores ficam lado a lado. Use botões grandes de mais e menos e desfaça uma contagem acidental.\n\nAcompanhe cada projeto\nCrie, edite, pause, retome e conclua projetos. Guarde os materiais necessários e as notas junto à receita. Biblioteca, contadores e notas funcionam offline, sem conta Craftfolio ou Google Play Services.\n\nGrátis e Premium\nGrátis inclui 20 importações, 3 projetos não concluídos e um contador por projeto. Premium adiciona importações e projetos ilimitados e vários contadores com nome, dentro do espaço disponível. Não inclui receitas. Ficheiros, projetos e contadores existentes continuam acessíveis quando Premium termina. A Amazon gere compras e renovações automáticas. O Premium verificado exige conexão pelo menos a cada 72 horas; seus ficheiros pessoais continuam disponíveis offline.\n\nDados no seu dispositivo\nSem anúncios, rede social ou análise de uso. Apenas identificadores de recibo e conta Amazon são usados na verificação de compras. Desinstalar apaga os dados locais; guarde os ficheiros de origem ou exporte os originais antes.\n\nEscolha o idioma no aplicação. Receitas importadas e textos pessoais não são traduzidos automaticamente.",
+  "feature_bullets": [
+    "Importe e pesquise receitas em PDF e imagens",
+    "Organize projetos de tricot, croché e costura offline",
+    "Leia ao lado de contadores de carreiras com desfazer",
+    "Guarde notas, materiais e posição de leitura",
+    "Acesse seus originais mesmo após o fim do Premium"
+  ],
+  "keywords": [
+    "contador de carreiras",
+    "receitas tricot",
+    "receitas croché",
+    "biblioteca PDF",
+    "projetos costura",
+    "artesanato offline"
+  ],
+  "premium_title": "Craftfolio Premium",
+  "premium_description": "Mais espaço para tricot e croché: importações de receitas e projetos ilimitados e vários contadores com nome por projeto, dentro do armazenamento disponível. Os planos mensal e anual oferecem as mesmas funções Premium. Ficheiros importados e dados existentes continuam acessíveis ao fim da subscrição. Não inclui receitas. Pagamento e renovação automática seguem as condições da subscrição Amazon escolhida. O Premium verificado exige conexão pelo menos a cada 72 horas.",
+  "screenshot_captions": [
+    "A sua biblioteca de receitas PDF",
+    "Não perca a conta das carreiras",
+    "Receitas e contadores lado a lado",
+    "Retome cada projeto criativo"
+  ]
+}

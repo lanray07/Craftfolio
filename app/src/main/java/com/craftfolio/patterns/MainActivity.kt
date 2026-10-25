@@ -1,6 +1,7 @@
 package com.craftfolio.patterns
 
 import android.os.Bundle
+import android.content.Context
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -18,6 +19,8 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource as s
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
@@ -33,16 +36,16 @@ class CraftViewModel(application: Application) : AndroidViewModel(application) {
     val projects = repo.dao.projects()
     val counters = repo.dao.counters()
     val notes = repo.dao.notes()
-    val errors = mutableStateOf<String?>(null)
+    val errors = mutableStateOf<Throwable?>(null)
     private val actions = Channel<suspend () -> Unit>(Channel.UNLIMITED)
     private val positions = Channel<Unit>(Channel.CONFLATED)
     private val pendingPositions = linkedMapOf<String, suspend () -> Unit>()
     init {
-        viewModelScope.launch { for (action in actions) runCatching { action() }.onFailure { errors.value = it.message ?: "Operation failed" } }
+        viewModelScope.launch { for (action in actions) runCatching { action() }.onFailure { errors.value = it } }
         viewModelScope.launch { for (signal in positions) {
             while (pendingPositions.isNotEmpty()) {
                 val entry = pendingPositions.entries.first(); val save = entry.value; pendingPositions.remove(entry.key)
-                runCatching { save() }.onFailure { errors.value = it.message ?: "Could not save reading position" }
+                runCatching { save() }.onFailure { errors.value = if (it is UserFacingFailure) it else UserFacingFailure(R.string.reading_position_failed) }
             }
         } }
     }
@@ -50,6 +53,7 @@ class CraftViewModel(application: Application) : AndroidViewModel(application) {
     fun position(id: String, save: suspend () -> Unit) { pendingPositions[id] = save; positions.trySend(Unit) }
 }
 class MainActivity : ComponentActivity() {
+    override fun attachBaseContext(newBase: Context) { super.attachBaseContext(AppLanguages.wrap(newBase)) }
     override fun onCreate(savedInstanceState: Bundle?) { super.onCreate(savedInstanceState); setContent { Craftfolio() } }
     override fun onResume() { super.onResume(); (application as CraftfolioApp).billing.refresh() }
 }
@@ -60,6 +64,10 @@ fun Craftfolio(vm: CraftViewModel = viewModel()) {
     val colors = if (dark) darkColorScheme(primary = Color(0xFFA8CDB9), background = Color(0xFF1D2520), surface = Color(0xFF27312A), surfaceContainerHighest = Color(0xFF354139))
         else lightColorScheme(primary = Color(0xFF315D50), background = Color(0xFFF8F5EF), surface = Color(0xFFEEE8DC), secondary = Color(0xFF80503D), secondaryContainer = Color(0xFFDCE6DA), onSecondaryContainer = Color(0xFF233D30), surfaceContainerHighest = Color(0xFFEEE8DC))
     MaterialTheme(colorScheme = colors) {
+        val context = LocalContext.current
+        val defaultCounterName = s(R.string.rows)
+        val localizedCraftNames = mapOf("All" to s(R.string.all), "Knitting" to s(R.string.knitting), "Crochet" to s(R.string.crochet), "Sewing" to s(R.string.sewing), "Other" to s(R.string.other))
+        var languageDialog by remember { mutableStateOf(false) }
         val patterns by vm.patterns.collectAsState(initial = emptyList())
         val projects by vm.projects.collectAsState(initial = emptyList())
         val counters by vm.counters.collectAsState(initial = emptyList())
@@ -82,13 +90,14 @@ fun Craftfolio(vm: CraftViewModel = viewModel()) {
         val exporter = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/octet-stream")) { uri ->
             val pattern = exportPattern
             if (uri != null && pattern != null) vm.act { kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
-                vm.app.contentResolver.openOutputStream(uri)?.use { out -> java.io.File(pattern.path).inputStream().use { it.copyTo(out) } } ?: error("Cannot export file")
+                vm.app.contentResolver.openOutputStream(uri)?.use { out -> java.io.File(pattern.path).inputStream().use { it.copyTo(out) } } ?: throw UserFacingFailure(R.string.export_failed)
             } }
         }
         Surface(Modifier.fillMaxSize(), color = colors.background) {
             Column(Modifier.fillMaxSize().statusBarsPadding().navigationBarsPadding().padding(horizontal = 20.dp)) {
                 Row(Modifier.fillMaxWidth().padding(vertical = 16.dp), horizontalArrangement = Arrangement.SpaceBetween) {
                     Column(Modifier.weight(1f).padding(end = 8.dp)) { Text(s(R.string.app_name), style = MaterialTheme.typography.headlineMedium); Text(s(R.string.tagline), style = MaterialTheme.typography.bodySmall) }
+                    TextButton(onClick = { languageDialog = true }, modifier = Modifier.testTag("language-selector")) { Text(s(R.string.language)) }
                     TextButton(onClick = { tab = 2; selected = null }) { Text(s(if (premium) R.string.premium else R.string.free)) }
                 }
                 val project = projects.find { it.id == selected }
@@ -142,7 +151,7 @@ fun Craftfolio(vm: CraftViewModel = viewModel()) {
                             }
                             LazyVerticalGrid(columns = GridCells.Adaptive(340.dp), modifier = Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(12.dp), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                                 if (patterns.isEmpty()) item { Text(s(R.string.empty_library), Modifier.padding(vertical = 32.dp)) }
-                                gridItems(patterns.filter { (craft == "All" || it.craft == craft) && (it.title.contains(search, true) || it.craft.contains(search, true)) }, key = { it.id }) { p ->
+                                gridItems(patterns.filter { (craft == "All" || it.craft == craft) && (it.title.contains(search, true) || it.craft.contains(search, true) || localizedCraftNames[it.craft].orEmpty().contains(search, true)) }, key = { it.id }) { p ->
                                     Card(Modifier.fillMaxWidth()) { Row(Modifier.padding(20.dp), horizontalArrangement = Arrangement.spacedBy(20.dp)) { PatternCover(p); Column(Modifier.weight(1f)) { Text(p.title, style = MaterialTheme.typography.titleLarge); Text("${craftLabel(p.craft)} · ${if(p.mime == "application/pdf") "PDF" else s(R.string.image)}")
                                         Button(onClick = { createPattern = p }) { Text(s(R.string.start_project)) }
                                         TextButton(onClick = {
@@ -163,14 +172,27 @@ fun Craftfolio(vm: CraftViewModel = viewModel()) {
                 }
             }
         }
-        createPattern?.let { pattern -> ProjectDialog(null, pattern.title, onDismiss = { createPattern = null }) { name, materials, _ -> vm.act { selected = vm.repo.create(pattern, name, materials, premium); createPattern = null } } }
+        createPattern?.let { pattern -> ProjectDialog(null, pattern.title, onDismiss = { createPattern = null }) { name, materials, _ -> vm.act { selected = vm.repo.create(pattern, name, materials, premium, defaultCounterName); createPattern = null } } }
         preview?.let { pattern -> androidx.compose.ui.window.Dialog(onDismissRequest = { preview = null }, properties = androidx.compose.ui.window.DialogProperties(usePlatformDefaultWidth = false)) {
             Surface(Modifier.fillMaxSize().padding(16.dp)) { Column { TextButton(onClick = { preview = null }) { Text(s(R.string.close)) }; PatternViewer(pattern, Project("", pattern.id, pattern.title, page = pattern.page, zoom = pattern.zoom, panX = pattern.panX, panY = pattern.panY), vm, Modifier.weight(1f)) } }
         } }
         editing?.let { p -> ProjectDialog(p, p.name, onDismiss = { editing = null }) { name, materials, status -> vm.act { vm.repo.edit(p.id, name, materials, status); editing = null } } }
         if (newCounter && selected != null) TextDialog(R.string.add_counter, { newCounter = false }) { value -> val id = selected!!; vm.act { vm.repo.addCounter(id, value, premium); newCounter = false } }
         if (newNote && selected != null) TextDialog(R.string.add_note, { newNote = false }) { value -> val id = selected!!; vm.act { vm.repo.note(id, value); newNote = false } }
-        vm.errors.value?.let { error -> AlertDialog(onDismissRequest = { vm.errors.value = null }, title = { Text(s(R.string.action_failed)) }, text = { Text(error) }, confirmButton = { TextButton(onClick = { vm.errors.value = null }) { Text(s(R.string.close)) } }) }
+        vm.errors.value?.let { error -> AlertDialog(onDismissRequest = { vm.errors.value = null }, title = { Text(s(R.string.action_failed)) }, text = { Text(context.userMessage(error)) }, confirmButton = { TextButton(onClick = { vm.errors.value = null }) { Text(s(R.string.close)) } }) }
+        if (languageDialog) AlertDialog(onDismissRequest = { languageDialog = false }, title = { Text(s(R.string.language)) }, text = {
+            Column(Modifier.verticalScroll(rememberScrollState())) {
+                (listOf("") + AppLanguages.supported).forEach { tag ->
+                    TextButton(onClick = {
+                        AppLanguages.save(context, tag)
+                        languageDialog = false
+                        (context as? android.app.Activity)?.recreate()
+                    }, modifier = Modifier.fillMaxWidth().testTag("language-$tag")) {
+                        Text(if (tag.isEmpty()) s(R.string.language_system) else AppLanguages.nativeName(tag))
+                    }
+                }
+            }
+        }, confirmButton = { TextButton(onClick = { languageDialog = false }) { Text(s(R.string.close)) } })
     }
 }
 
@@ -191,12 +213,16 @@ private fun exportName(pattern: Pattern): String = pattern.title + when(pattern.
 }
 @Composable fun PremiumScreen(vm: CraftViewModel) {
     val products by vm.app.billing.products.collectAsState(); val message by vm.app.billing.message.collectAsState()
+    val purchaseReady by vm.app.billing.purchaseReady.collectAsState()
     Column(Modifier.verticalScroll(rememberScrollState()).padding(vertical = 24.dp), verticalArrangement = Arrangement.spacedBy(20.dp)) {
         Text(s(R.string.premium_title), style = MaterialTheme.typography.headlineMedium)
         Text(s(R.string.premium_description))
         Text(s(R.string.free_description))
         if (vm.app.billing.configured) {
-            products.forEach { product -> Button(onClick = { vm.app.billing.purchase(product.sku) }) { Text("${product.title} · ${product.price}") } }
+            products.forEach { product ->
+                val label = if (product.sku == BillingCatalog.MONTHLY) R.string.premium_monthly else R.string.premium_annual
+                Button(enabled = purchaseReady, onClick = { vm.app.billing.purchase(product.sku) }) { Text("${s(label)} · ${product.price}") }
+            }
             OutlinedButton(onClick = { vm.app.billing.refresh() }) { Text(s(R.string.restore)) }
             if (products.isEmpty()) Text(s(R.string.billing_failed))
         } else Text(s(R.string.billing_unconfigured))

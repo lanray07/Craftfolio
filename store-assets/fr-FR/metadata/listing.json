@@ -1,0 +1,30 @@
+{
+  "status": "Brouillon localisé. Les tests de facturation Amazon restent nécessaires avant la mise en production.",
+  "title": "Craftfolio : modèles et projets",
+  "short_description": "Conservez vos modèles PDF, organisez vos projets de tricot et de crochet et retrouvez compteurs, matériel et notes hors ligne.",
+  "long_description": "Tous vos modèles conservés. Tous vos projets suivis.\n\nCraftfolio réunit vos modèles PDF et images, vos projets créatifs et vos compteurs de rangs dans un espace serein pour les tablettes Fire compatibles.\n\nVotre bibliothèque personnelle\nImportez des modèles PDF, JPEG, PNG ou WebP. Recherchez un titre et filtrez par tricot, crochet ou couture. Les fichiers originaux sont copiés dans le stockage local de l’application : leur lecture ne dépend plus de la disponibilité de leur emplacement d’origine. Exportez un fichier original quand vous en avez besoin.\n\nLire et compter ensemble\nZoomez, déplacez le modèle, parcourez les pages PDF et retrouvez la position de lecture enregistrée pour votre projet. Sur les écrans larges, le modèle et les compteurs s’affichent côte à côte. Les grands boutons plus et moins facilitent le comptage, avec une commande pour annuler une erreur.\n\nAccompagner chaque projet\nCréez, modifiez, mettez en pause, reprenez et terminez vos projets. Gardez le matériel nécessaire et les notes près du modèle. Bibliothèque, compteurs et notes fonctionnent hors ligne, sans compte Craftfolio ni Google Play Services.\n\nGratuit et Premium\nLa version gratuite comprend jusqu’à 20 imports de modèles, 3 projets non terminés et un compteur par projet. Premium ajoute des imports et projets illimités ainsi que plusieurs compteurs nommés. Les fichiers déjà importés, les projets et les compteurs existants restent accessibles à la fin de Premium. Amazon gère les achats et les renouvellements automatiques. Premium vérifié nécessite une connexion au moins toutes les 72 heures pour une nouvelle vérification. Vos fichiers personnels restent accessibles hors ligne.\n\nVos créations restent privées\nAucune publicité, aucun fil social ni analyse d’utilisation. Vos modèles et notes restent sur votre appareil. La vérification des achats utilise uniquement les identifiants de compte et de reçu Amazon. La désinstallation supprime les données locales : conservez vos fichiers sources ou exportez les originaux avant de désinstaller.\n\nChoisissez la langue dans l’application. Les modèles importés et les textes personnels ne sont pas traduits automatiquement.\n\nUn espace pensé pour votre prochain projet créatif.",
+  "feature_bullets": [
+    "Importer et rechercher des modèles PDF et images",
+    "Suivre vos projets de tricot, de crochet et de couture hors ligne",
+    "Lire un modèle à côté de grands compteurs de rangs avec annulation",
+    "Conserver notes, matériel et position de lecture pour chaque projet",
+    "Accéder aux fichiers importés même après la fin de Premium"
+  ],
+  "keywords": [
+    "compteur de rangs",
+    "modèles tricot",
+    "patrons crochet",
+    "bibliothèque PDF",
+    "projets créatifs",
+    "patrons couture",
+    "tricot hors ligne"
+  ],
+  "premium_title": "Craftfolio Premium",
+  "premium_description": "Agrandissez votre espace personnel de tricot et de crochet avec des imports de modèles et des projets non terminés illimités, ainsi que plusieurs compteurs de rangs par projet, dans la limite du stockage de l’appareil. Organisez vos propres modèles PDF et images et suivez vos projets hors ligne. Les formules mensuelle et annuelle offrent les mêmes fonctions Premium. Vos modèles importés et vos données existantes restent accessibles après la fin de l’abonnement. Aucun modèle n’est inclus. Le paiement et le renouvellement automatique suivent les conditions de l’abonnement Amazon choisi.",
+  "screenshot_captions": [
+    "Votre bibliothèque de modèles PDF",
+    "Gardez le fil de vos rangs",
+    "Modèle et compteurs côte à côte",
+    "Retrouvez chaque projet créatif"
+  ]
+}

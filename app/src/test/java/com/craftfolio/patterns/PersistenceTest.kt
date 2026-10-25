@@ -24,7 +24,7 @@ class PersistenceTest {
     @Test fun rapidCountersUndoAndReopen() = runBlocking {
         val pattern = Pattern("p", "Moss stitch scarf", "Knitting", "/private/pattern", "application/pdf", 100)
         repo.dao.insert(pattern)
-        val id = repo.create(pattern, "Winter scarf", "200 g wool", false)
+        val id = repo.create(pattern, "Winter scarf", "200 g wool", false, "Rows")
         val counter = repo.dao.counters().first().single()
         coroutineScope { repeat(100) { launch(Dispatchers.IO) { repo.change(counter.id, 1) } } }
         repo.change(counter.id, -1); repo.undo(counter.id)
@@ -41,14 +41,14 @@ class PersistenceTest {
     }
     @Test fun freeLimitsPreserveExistingProjects() = runBlocking {
         val p = Pattern("p", "Scarf", "Knitting", "/private/p", "application/pdf", 10); repo.dao.insert(p)
-        val first = repo.create(p, "One", "", false)
-        repo.create(p, "Two", "", false); repo.create(p, "Three", "", false)
-        assertTrue(runCatching { repo.create(p, "Four", "", false) }.isFailure)
+        val first = repo.create(p, "One", "", false, "Rows")
+        repo.create(p, "Two", "", false, "Rows"); repo.create(p, "Three", "", false, "Rows")
+        assertTrue(runCatching { repo.create(p, "Four", "", false, "Rows") }.isFailure)
         assertTrue(runCatching { repo.addCounter(first, "Rounds", false) }.isFailure)
         repo.addCounter(first, "Rounds", true)
         val extra = repo.dao.counters().first().last(); repo.change(extra.id, 1)
         assertEquals(1, repo.dao.counter(extra.id)!!.value)
-        repo.edit(first, "One", "", "COMPLETED"); repo.create(p, "Four", "", false)
+        repo.edit(first, "One", "", "COMPLETED"); repo.create(p, "Four", "", false, "Rows")
         Unit
     }
 }

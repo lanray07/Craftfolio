@@ -73,7 +73,7 @@ fun renderPattern(pattern: Pattern, index: Int, maxWidth: Int = 1600, maxHeight:
     Column(modifier.padding(vertical = 12.dp)) {
         Row(Modifier.fillMaxWidth().horizontalScrollCompat(), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
             TextButton(enabled = page > 0, onClick = { page--; zoom = 1f; panX = 0f; panY = 0f; persist() }) { Text(s(R.string.previous)) }
-            Text(s(R.string.page_number, page + 1, rendered?.pages ?: 1), Modifier.padding(top = 14.dp))
+            Text(if (rendered == null) s(R.string.page_loading, page + 1) else s(R.string.page_number, page + 1, rendered!!.pages), Modifier.padding(top = 14.dp))
             TextButton(enabled = page + 1 < (rendered?.pages ?: 1), onClick = { page++; zoom = 1f; panX = 0f; panY = 0f; persist() }) { Text(s(R.string.next)) }
             TextButton(onClick = { zoom = 1f; panX = 0f; panY = 0f; persist() }) { Text(s(R.string.fit)) }
             TextButton(onClick = { zoom = (zoom + 0.5f).coerceAtMost(5f); persist() }) { Text(s(R.string.zoom_in)) }

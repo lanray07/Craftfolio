@@ -1,0 +1,55 @@
+{
+  "locale": "sv-SE",
+  "ui_language": "sv-SE",
+  "locale_control": "Real in-app language selector; previous preference restored after capture",
+  "sample_content": "Original English CC0 sample documents and user-entered project text are not automatically translated",
+  "model": "KFTRWI",
+  "api": "28",
+  "screenshots": [
+    {
+      "file": "01-pattern-library.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "3f444b1f16c94c7c4888971bc484f62bc4e630b44940be6b51867dbc00906826",
+      "headline": "Ditt eget PDF-m\u00f6nsterbibliotek",
+      "benefit": "Ditt eget PDF-m\u00f6nsterbibliotek",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "02-knitting-row-counter.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "c8b60fef2ce37d42c5d56dececa3ff53e1c52e4c10fad118170e81a464e61bf4",
+      "headline": "Tappa inte bort varvr\u00e4kningen",
+      "benefit": "Tappa inte bort varvr\u00e4kningen",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "03-split-view-workspace.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "bc389875830ab17c7ad2e4f3d1101467aa0a741465d8aebb7c93ccc273abed03",
+      "headline": "M\u00f6nster och r\u00e4knare sida vid sida",
+      "benefit": "M\u00f6nster och r\u00e4knare sida vid sida",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "04-project-tracker.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "f33de451defc536116a033929a9ccb8eaeda475dcc6e510c4c99af23a0851897",
+      "headline": "Forts\u00e4tt med varje kreativt projekt",
+      "benefit": "Forts\u00e4tt med varje kreativt projekt",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    }
+  ],
+  "review": "Native assertions passed; visual review required. Captions are separate copy, not image overlays."
+}

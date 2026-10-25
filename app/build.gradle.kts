@@ -14,7 +14,7 @@ android {
         versionCode = 1
         versionName = "1.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField("String", "VERIFICATION_URL", "\"${providers.gradleProperty("verificationUrl").orElse("").get()}\"")
+        buildConfigField("String", "VERIFICATION_URL", "\"${providers.gradleProperty("verificationUrl").orElse("https://craftfolio-rvs-production.lanraybanks.workers.dev/verify").get()}\"")
     }
     buildFeatures { compose = true; buildConfig = true }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }

@@ -1,0 +1,55 @@
+{
+  "locale": "pt-PT",
+  "ui_language": "pt-PT",
+  "locale_control": "Real in-app language selector; previous preference restored after capture",
+  "sample_content": "Original English CC0 sample documents and user-entered project text are not automatically translated",
+  "model": "KFTRWI",
+  "api": "28",
+  "screenshots": [
+    {
+      "file": "01-pattern-library.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "391792295b3b3cf7ff54cb812429e3b06dcb887357caa28ac2486082e6f14b97",
+      "headline": "A sua biblioteca de receitas PDF",
+      "benefit": "A sua biblioteca de receitas PDF",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "02-knitting-row-counter.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "6a3e4571bcfabc528e36452f258fdf0cec515e4e665352dff9e894f3509e0fee",
+      "headline": "N\u00e3o perca a conta das carreiras",
+      "benefit": "N\u00e3o perca a conta das carreiras",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "03-split-view-workspace.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "a8e7c6da583a46b92c8c689113bac92f54acad5f8f413a68552af92fd9952bf1",
+      "headline": "Receitas e contadores lado a lado",
+      "benefit": "Receitas e contadores lado a lado",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "04-project-tracker.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "d9739cca48f347f61e9021e8dcc3153eed07bafea9005e41089aa6ce38bb3854",
+      "headline": "Retome cada projeto criativo",
+      "benefit": "Retome cada projeto criativo",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    }
+  ],
+  "review": "Native assertions passed; visual review required. Captions are separate copy, not image overlays."
+}

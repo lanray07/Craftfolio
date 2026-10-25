@@ -1,0 +1,30 @@
+{
+  "status": "Lokalisierter Entwurf. Die Produktionsfreigabe erfordert noch Amazon-Abrechnungstests.",
+  "title": "Craftfolio: Anleitungen & Projekte",
+  "short_description": "PDF-Anleitungen sammeln, Strick- und Häkelprojekte organisieren und Reihen, Material und Notizen offline im Blick behalten.",
+  "long_description": "Jede Anleitung gespeichert. Jedes Projekt im Blick.\n\nCraftfolio vereint deine PDF- und Bildanleitungen, Handarbeitsprojekte und Reihenzähler in einem übersichtlichen Arbeitsbereich für kompatible Fire-Tablets.\n\nDeine persönliche Anleitungsbibliothek\nImportiere Anleitungen als PDF, JPEG, PNG oder WebP. Suche nach Titeln und filtere nach Stricken, Häkeln oder Nähen. Die Originaldateien werden in den lokalen App-Speicher kopiert. So kannst du auch dann weiterlesen, wenn die ursprüngliche Quelle nicht mehr verfügbar ist. Originale lassen sich jederzeit exportieren.\n\nLesen und zählen in einer Ansicht\nZoome und verschiebe deine Anleitung, blättere durch PDF-Seiten und kehre zur gespeicherten Leseposition deines Projekts zurück. Auf breiten Tablet-Layouts stehen Anleitung und Zähler nebeneinander. Große Plus- und Minus-Tasten erleichtern das Zählen; versehentliche Schritte lassen sich rückgängig machen.\n\nDeine Projekte begleiten\nErstelle, bearbeite, pausiere und beende Projekte oder setze sie später fort. Bewahre Materialangaben und Projektnotizen direkt bei der Anleitung auf. Bibliothek, Zähler und Notizen funktionieren offline, ohne Craftfolio-Konto und ohne Google Play Services.\n\nKostenlos und Premium\nKostenlos enthalten sind bis zu 20 Anleitungsimporte, 3 offene Projekte und ein Zähler pro Projekt. Premium bietet unbegrenzt viele Importe und Projekte sowie mehrere benannte Zähler. Bereits importierte Dateien, Projekte und vorhandene Zähler bleiben nach dem Ende von Premium zugänglich. Amazon verwaltet Käufe und automatische Verlängerungen. Für verifiziertes Premium ist spätestens alle 72 Stunden eine Internetverbindung zur erneuten Prüfung erforderlich. Persönliche Dateien bleiben offline zugänglich.\n\nPrivat auf deinem Gerät\nKeine Werbung, sozialen Feeds oder Nutzungsanalysen. Anleitungen und Projektnotizen bleiben auf deinem Gerät. Zur Kaufprüfung werden nur Amazon-Konto- und Belegkennungen verwendet. Beim Deinstallieren werden lokale App-Daten gelöscht. Bewahre deshalb Quelldateien auf oder exportiere Originale vorher.\n\nWähle deine Sprache direkt in der App. Importierte Anleitungen und persönliche Texte werden nicht automatisch übersetzt.\n\nEin durchdachter Platz für dein nächstes kreatives Projekt.",
+  "feature_bullets": [
+    "PDF- und Bildanleitungen importieren und durchsuchen",
+    "Strick-, Häkel- und Nähprojekte offline verwalten",
+    "Anleitung und große Reihenzähler mit Rückgängig-Funktion nebeneinander nutzen",
+    "Notizen, Materialangaben und Leseposition pro Projekt speichern",
+    "Importierte Dateien auch nach dem Ende von Premium weiter öffnen"
+  ],
+  "keywords": [
+    "Reihenzähler",
+    "Strickanleitung",
+    "Häkelanleitung",
+    "PDF Anleitungen",
+    "Handarbeit Projekte",
+    "Nähprojekte",
+    "offline stricken"
+  ],
+  "premium_title": "Craftfolio Premium",
+  "premium_description": "Erweitere deinen persönlichen Arbeitsbereich für Stricken und Häkeln: unbegrenzt viele Anleitungsimporte und offene Projekte sowie mehrere Reihenzähler pro Projekt, begrenzt durch den Gerätespeicher. Organisiere eigene PDF- und Bildanleitungen und verfolge Projekte offline. Monats- und Jahresabonnement bieten dieselben Premium-Funktionen. Importierte Anleitungen und vorhandene Projektdaten bleiben nach dem Ende des Abonnements zugänglich. Es sind keine Anleitungen enthalten. Zahlung und automatische Verlängerung richten sich nach den gewählten Amazon-Abonnementbedingungen.",
+  "screenshot_captions": [
+    "PDF-Anleitungen übersichtlich sammeln",
+    "Deinen Reihenstand immer im Blick",
+    "Anleitung und Zähler nebeneinander",
+    "Jedes Handarbeitsprojekt im Blick"
+  ]
+}

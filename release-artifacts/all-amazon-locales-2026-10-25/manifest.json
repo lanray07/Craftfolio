@@ -1,0 +1,177 @@
+{
+  "date": "2026-10-25",
+  "version": "1.0.0",
+  "versionCode": 1,
+  "applicationId": "com.craftfolio.patterns",
+  "databaseSchema": 2,
+  "localeMatrix": [
+    {
+      "tag": "en-US",
+      "amazon": "English (U.S.)",
+      "resource": "values-en-rUS",
+      "description": true,
+      "images": true,
+      "premium": true
+    },
+    {
+      "tag": "en-GB",
+      "amazon": "English (U.K.)",
+      "resource": "values-en-rGB",
+      "description": true,
+      "images": true,
+      "premium": true
+    },
+    {
+      "tag": "en-AU",
+      "amazon": "English (Australia)",
+      "resource": "values-en-rAU",
+      "description": true,
+      "images": true,
+      "premium": true
+    },
+    {
+      "tag": "en-IN",
+      "amazon": "English (India)",
+      "resource": "values-en-rIN",
+      "description": true,
+      "images": true,
+      "premium": true
+    },
+    {
+      "tag": "de-DE",
+      "amazon": "German",
+      "resource": "values-de",
+      "description": true,
+      "images": true,
+      "premium": true
+    },
+    {
+      "tag": "fr-FR",
+      "amazon": "French",
+      "resource": "values-fr",
+      "description": true,
+      "images": true,
+      "premium": true
+    },
+    {
+      "tag": "es-ES",
+      "amazon": "Spanish",
+      "resource": "values-es",
+      "description": true,
+      "images": true,
+      "premium": true
+    },
+    {
+      "tag": "es-MX",
+      "amazon": "Spanish (Mexico)",
+      "resource": "values-es-rMX",
+      "description": true,
+      "images": true,
+      "premium": true
+    },
+    {
+      "tag": "it-IT",
+      "amazon": "Italian",
+      "resource": "values-it",
+      "description": true,
+      "images": true,
+      "premium": true
+    },
+    {
+      "tag": "ja-JP",
+      "amazon": "Japanese",
+      "resource": "values-ja",
+      "description": true,
+      "images": true,
+      "premium": true
+    },
+    {
+      "tag": "nl-NL",
+      "amazon": "Dutch (Netherlands)",
+      "resource": "values-nl",
+      "description": true,
+      "images": false,
+      "premium": false
+    },
+    {
+      "tag": "pl-PL",
+      "amazon": "Polish (Poland)",
+      "resource": "values-pl",
+      "description": true,
+      "images": false,
+      "premium": false
+    },
+    {
+      "tag": "pt-BR",
+      "amazon": "Portuguese (Brazil)",
+      "resource": "values-pt-rBR",
+      "description": true,
+      "images": true,
+      "premium": true
+    },
+    {
+      "tag": "pt-PT",
+      "amazon": "Portuguese (Portugal)",
+      "resource": "values-pt-rPT",
+      "description": true,
+      "images": false,
+      "premium": false
+    },
+    {
+      "tag": "sv-SE",
+      "amazon": "Swedish (Sweden)",
+      "resource": "values-sv",
+      "description": true,
+      "images": false,
+      "premium": false
+    },
+    {
+      "tag": "zh-CN",
+      "amazon": "Chinese (Simplified)",
+      "resource": "values-zh-rCN",
+      "description": false,
+      "images": false,
+      "premium": true
+    }
+  ],
+  "status": "All offered Amazon locales implemented; production release blocked",
+  "artifacts": [
+    {
+      "file": "Craftfolio-1.0.0-debug.apk",
+      "bytes": 17469653,
+      "sha256": "025e74149e8ff935663b6742aeff982d8c35a15020c19365ad5ba3e1d3104f62",
+      "signing": "Development key; testing only"
+    },
+    {
+      "file": "Craftfolio-1.0.0-unsigned.apk",
+      "bytes": 7779035,
+      "sha256": "91fdf0a192512d5f0be82f6a1a7313005897de7d39422fb55b56af68f484b4ae",
+      "signing": "Unsigned; developer release signing required"
+    }
+  ],
+  "verificationUrl": "",
+  "checks": {
+    "build": "PASS debug, androidTest, unsigned release",
+    "buildLog": "test-evidence/all-locales-final-build.log",
+    "jvmTests": 5,
+    "physicalFireLocalizationTests": 2,
+    "testedChooserLocales": 16,
+    "newPhysicalFireCaptureJobs": 11,
+    "screenshotsLocalTotal": 64,
+    "amazonMainDescriptionLocales": 15,
+    "amazonImageLocales": 11,
+    "amazonScreenshotAssets": 44,
+    "amazonPremiumLocales": 12,
+    "lintErrors": 0,
+    "lintWarnings": 18,
+    "resourceAndAssetValidation": "PASS",
+    "amazonPremium": "TEST / Approved 2026-10-25; no purchase performed"
+  },
+  "releaseGates": [
+    "HTTPS verifier hosting and configured build URL",
+    "Actual Amazon App Tester, RVS sandbox and LAT purchase tests",
+    "Developer release signing and signed-build verification",
+    "Remaining device/accessibility/store checklist",
+    "Native-speaker editorial review not performed"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "versionCode": 1,
+  "applicationId": "com.craftfolio.patterns",
+  "status": "Production app Submitted to Amazon 25 October 2026; review/publication pending",
+  "artifacts": [
+    {
+      "file": "Craftfolio-1.0.0-LAT.apk",
+      "bytes": 7798406,
+      "sha256": "3f1e80c8c6190c9d36dea7b15a39c8bc764cb671860f8c8b5e07ec1dbaefaffc",
+      "environment": "staging",
+      "signing": "dedicated release key"
+    },
+    {
+      "file": "Craftfolio-1.0.0-production.apk",
+      "bytes": 7798406,
+      "sha256": "72a95ece3b06f2fef0a1a2074534406dea23955d16c40e09113c7d5784d9cf6e",
+      "environment": "production",
+      "signing": "dedicated release key"
+    },
+    {
+      "file": "Craftfolio-1.0.0-sandbox-androidTest.apk",
+      "bytes": 2008361,
+      "sha256": "241009c34b13f5c4ad959563d73fd3c399dd0c4071e160127c3ae70cf272d3c5",
+      "environment": "sandbox",
+      "signing": "Android debug key"
+    },
+    {
+      "file": "Craftfolio-1.0.0-sandbox-debug.apk",
+      "bytes": 17469653,
+      "sha256": "854ad03a89b92a45beb0bd4a8b2db54963d41d4b75d964ae38ab055a743025ec",
+      "environment": "sandbox",
+      "signing": "Android debug key"
+    }
+  ],
+  "releaseCertificateSha256": "2d98978aca0250ca6f298cc0550f6b1816612308fd0886c2dba0a7598a54538a",
+  "checks": {
+    "jvm": 13,
+    "node": 22,
+    "physicalBillingInstrumentation": 2,
+    "lintErrors": 0,
+    "lintWarnings": 16,
+    "monthlyAnnualSandbox": "pass",
+    "offlineLease": "pass",
+    "accountSwitch": "pass",
+    "sourceFilesAndProjectState": "Original active-profile debug data in verified private backup; signed test project retained after closure/force-stop/reboot",
+    "sandboxRejectedByProduction": "pass",
+    "refundExpiry": "inconclusive: Amazon sandbox cancelDate remains null",
+    "signedReleaseDeviceTest": "Amazon installed; monthly/annual LAT purchase, receipt verification, Restore and offline restart PASS; remaining QA incomplete",
+    "LAT": "Test in-progress; monthly/annual PASS",
+    "liveCustomerBilling": "not run",
+    "LATResetRevocation": "PASS: reset then Restore changed Premium to Free",
+    "signedProjectOfflineNormalClose": "PASS",
+    "signedProjectOfflineForceStop": "PASS",
+    "signedProjectOfflineReboot": "PASS: changed boot ID",
+    "postPremiumOriginalExport": "PASS: exact SHA-256 match",
+    "PremiumPromotion": "Promoted from TEST; Approved"
+  }
+}

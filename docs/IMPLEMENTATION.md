@@ -6,6 +6,8 @@ Repository inspection: empty directory, no existing source or repository instruc
 2. Library and projects: local search/craft filter, create/edit/status transitions, notes and requirements. Free: 20 imports, 3 unfinished projects, one counter; Premium adds capacity and counters. Existing content stays usable.
 3. Viewer: platform PdfRenderer, bounded page rendering, image sampling, zoom/pan, page and transform saved transactionally; wide split workspace, compact stacked layout.
 4. Commerce: Amazon Appstore SDK, product prices from Amazon, purchase/restore callbacks, server RVS verification and bounded offline cache. Never embed developer secret.
-5. Quality: unit/database tests, device persistence harness, screenshots captured from running app, UK/US metadata, release checklist. Physical Fire and live billing evidence required before release.
+5. Quality: unit/database tests, device persistence harness, screenshots captured from running app, UK/US metadata, release checklist. The user subsequently extended language support to German, French and Spanish; see LOCALIZATION.md. Physical Fire and live billing evidence required before release.
 
 Target: Fire OS 7/8 Android-compatible tablets (API 26+), excluding older Fire OS 5 devices and non-Android devices. Compatibility is a target until tested. Manual dependency injection keeps this small app explicit. No background service, analytics, account, WorkManager or cloud storage is needed.
+
+The user subsequently expanded localisation to all Amazon options for both app and listings: 16 app locales, with the differing 15 main-description / 11 image / 12 Premium slots recorded in store-assets/locales.json. This overrides the earlier named-language limit only; no other Phase 2 features are enabled.

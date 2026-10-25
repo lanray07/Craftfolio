@@ -1,6 +1,6 @@
 # Craftfolio — Patterns & Projects
 
-Native Kotlin / Jetpack Compose offline workspace for Android-compatible Amazon Fire tablets. Phase 1 only. See [implementation plan](docs/IMPLEMENTATION.md) and [release checklist](docs/RELEASE.md). This is a development build until every release gate passes.
+Native Kotlin / Jetpack Compose offline workspace for Android-compatible Amazon Fire tablets. Phase 1 only. See [implementation plan](docs/IMPLEMENTATION.md) and [release checklist](docs/RELEASE.md). Submitted to Amazon for review on 25 October 2026 after signed LAT billing and offline persistence checks; publication and remaining coverage limitations are recorded in the release checklist.
 
 ## Build
 
@@ -9,7 +9,7 @@ Install JDK 17 and Android SDK platform 35/build tools. Point `local.properties`
 ```powershell
 .\gradlew.bat testDebugUnitTest assembleDebug assembleRelease lintDebug
 .\gradlew.bat connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.craftfolio.patterns.JourneyTest
-node --test verification-service/entitlement.test.mjs
+node --test verification-service/*.test.mjs
 ```
 
 Debug APK: `app/build/outputs/apk/debug/app-debug.apk`. Unsigned release APK: `app/build/outputs/apk/release/app-release-unsigned.apk`. Release signing is deliberately external; never commit a signing key. Android Studio's **Generate Signed Bundle / APK → APK** can sign the release with your own keystore. Preserve the signing key for updates. Verify using SDK `apksigner verify --verbose signed.apk` before uploading to Amazon.
@@ -28,7 +28,17 @@ Free: 20 imports, 3 unfinished projects, 1 counter per project. Premium: unlimit
 
 See `verification-service/` and [Amazon setup](docs/AMAZON.md). No price or trial is invented: purchase prices come from Amazon. Builds without the public authentication key and HTTPS verifier show an honest unavailable message and expose no purchase button. Do not publish such a build as subscription-ready.
 
+Purchasable monthly/annual SKUs map to the single `craftfolio_premium` receipt parent. Catalogue queries include the parent and both terms. See the [hosting and billing-test runbook](verification-service/HOSTING.md) for the deployed free Cloudflare sandbox, LAT and production verifiers. The default endpoint is production; build with `-PverificationUrl=https://craftfolio-rvs-sandbox.lanraybanks.workers.dev/verify` for explicit App Tester testing. Sandbox and Amazon-distributed LAT monthly/annual purchase, Restore, offline restart and reset-to-Free pass on Fire HD 10. The production app is submitted to Amazon; review/publication and remaining coverage limits are documented in docs/RELEASE-SUMMARY.md. Latest signed APKs are in `release-artifacts/billing-2026-10-25/`; secure the [release signing key backup](docs/SIGNING.md) before publishing.
+
 ## Testing and assets
+
+The app supports all Amazon localisation options: 16 regional locales across English, German, French, Spanish, Italian, Japanese, Dutch, Polish, Portuguese, Swedish and Simplified Chinese. Use the header's **Language** button or follow the tablet. Personal documents and project text retain their original contents. All 15 main-description, 11 image and 12 Premium locales offered by Amazon are configured; see [localisation results](docs/LOCALIZATION.md) for the surface matrix, physical Fire tests and 64 native screenshots. Latest APKs are in `release-artifacts/billing-2026-10-25/`; the production app is submitted to Amazon, and review/publication remain pending.
+
+```powershell
+python scripts/validate-localization.py
+python scripts/validate-assets.py
+.\gradlew.bat connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.craftfolio.patterns.LocalizationTest
+```
 
 `JourneyTest` validates file copying, original preservation after source removal, corrupt import rejection, PDF rendering and database reopen persistence. JVM tests cover concurrent counters, undo after reopen, entitlement expiry and free limits. These tests do not substitute for UI, process-death and reboot checks.
 

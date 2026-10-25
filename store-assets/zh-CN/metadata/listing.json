@@ -1,0 +1,11 @@
+{
+"status":"Premium-only Amazon locale; main listing and image localization not offered in current console. Production acceptance pending.",
+"title":"Craftfolio：图解与手工项目",
+"short_description":"离线整理PDF图解、棒针与钩针项目、行数计数器、材料和笔记。",
+"long_description":"保存每份图解，记录每个作品。\n\nCraftfolio在兼容的Fire平板电脑上整合手工图解与项目。导入自己的PDF、JPEG、PNG或WebP文件，按标题搜索或按棒针、钩针和缝纫筛选。原文件会复制到应用本地存储，并可随时导出。\n\n边看边数\n缩放、移动图解，切换PDF页面，并从已保存的阅读位置继续。宽屏可并排显示图解和计数器。使用加减按钮计数，并可撤销误操作。创建、编辑、暂停、继续和完成项目，将材料和笔记保存在图解旁。资料库、计数器和笔记可离线使用，无需Craftfolio账户或Google Play服务。\n\n免费版与Premium\n免费版支持20次导入、3个未完成项目和每个项目1个计数器。Premium支持不限数量的导入和项目，以及多个具名计数器，实际容量受设备可用存储空间限制。不包含图解内容。订阅结束后，现有文件、项目和计数器仍可使用。Amazon管理购买和自动续订。经过验证的Premium需至少每72小时联网重新验证，个人文件仍可离线访问。\n\n数据保存在设备上，无广告、社交动态或使用分析。购买验证仅使用Amazon账户和收据标识符。卸载会删除本地数据，请先保存源文件或导出原文件。可在应用内选择语言，导入的图解和个人文本不会自动翻译。",
+"feature_bullets":["导入并搜索PDF和图片图解","离线管理棒针、钩针和缝纫项目","图解与行数计数器并排显示，支持撤销","保存笔记、材料和阅读位置","Premium结束后仍可访问已导入的文件"],
+"keywords":["编织图解","行数计数器","钩针","棒针","PDF资料库","手工项目","离线"],
+"premium_title":"Craftfolio Premium",
+"premium_description":"为棒针与钩针作品提供更多空间：不限数量的图解导入和项目，并可为每个项目添加多个具名计数器，实际容量受设备可用存储空间限制。月付与年付方案提供相同的Premium功能。订阅结束后，已导入的文件和现有项目数据仍可访问。不包含图解内容。付款与自动续订遵循所选Amazon订阅的条款。经过验证的Premium需至少每72小时联网重新验证。",
+"screenshot_captions":["专属PDF图解资料库","随时记录编织行数","图解与计数器并排显示","继续每一个创作项目"]
+}

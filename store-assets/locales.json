@@ -1,0 +1,130 @@
+[
+  {
+    "tag": "en-US",
+    "amazon": "English (U.S.)",
+    "resource": "values-en-rUS",
+    "description": true,
+    "images": true,
+    "premium": true
+  },
+  {
+    "tag": "en-GB",
+    "amazon": "English (U.K.)",
+    "resource": "values-en-rGB",
+    "description": true,
+    "images": true,
+    "premium": true
+  },
+  {
+    "tag": "en-AU",
+    "amazon": "English (Australia)",
+    "resource": "values-en-rAU",
+    "description": true,
+    "images": true,
+    "premium": true
+  },
+  {
+    "tag": "en-IN",
+    "amazon": "English (India)",
+    "resource": "values-en-rIN",
+    "description": true,
+    "images": true,
+    "premium": true
+  },
+  {
+    "tag": "de-DE",
+    "amazon": "German",
+    "resource": "values-de",
+    "description": true,
+    "images": true,
+    "premium": true
+  },
+  {
+    "tag": "fr-FR",
+    "amazon": "French",
+    "resource": "values-fr",
+    "description": true,
+    "images": true,
+    "premium": true
+  },
+  {
+    "tag": "es-ES",
+    "amazon": "Spanish",
+    "resource": "values-es",
+    "description": true,
+    "images": true,
+    "premium": true
+  },
+  {
+    "tag": "es-MX",
+    "amazon": "Spanish (Mexico)",
+    "resource": "values-es-rMX",
+    "description": true,
+    "images": true,
+    "premium": true
+  },
+  {
+    "tag": "it-IT",
+    "amazon": "Italian",
+    "resource": "values-it",
+    "description": true,
+    "images": true,
+    "premium": true
+  },
+  {
+    "tag": "ja-JP",
+    "amazon": "Japanese",
+    "resource": "values-ja",
+    "description": true,
+    "images": true,
+    "premium": true
+  },
+  {
+    "tag": "nl-NL",
+    "amazon": "Dutch (Netherlands)",
+    "resource": "values-nl",
+    "description": true,
+    "images": false,
+    "premium": false
+  },
+  {
+    "tag": "pl-PL",
+    "amazon": "Polish (Poland)",
+    "resource": "values-pl",
+    "description": true,
+    "images": false,
+    "premium": false
+  },
+  {
+    "tag": "pt-BR",
+    "amazon": "Portuguese (Brazil)",
+    "resource": "values-pt-rBR",
+    "description": true,
+    "images": true,
+    "premium": true
+  },
+  {
+    "tag": "pt-PT",
+    "amazon": "Portuguese (Portugal)",
+    "resource": "values-pt-rPT",
+    "description": true,
+    "images": false,
+    "premium": false
+  },
+  {
+    "tag": "sv-SE",
+    "amazon": "Swedish (Sweden)",
+    "resource": "values-sv",
+    "description": true,
+    "images": false,
+    "premium": false
+  },
+  {
+    "tag": "zh-CN",
+    "amazon": "Chinese (Simplified)",
+    "resource": "values-zh-rCN",
+    "description": false,
+    "images": false,
+    "premium": true
+  }
+]

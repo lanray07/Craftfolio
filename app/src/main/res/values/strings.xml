@@ -10,11 +10,13 @@
     <string name="continue_project">Continue project</string><string name="search">Search patterns or crafts</string>
     <string name="all">All</string><string name="knitting">Knitting</string><string name="crochet">Crochet</string><string name="sewing">Sewing</string><string name="other">Other</string>
     <string name="import_craft">Import craft: %1$s</string><string name="import_pattern">Import pattern</string>
-    <string name="empty_library">A home for your next idea. Import a PDF or image pattern to begin your private, offline library.</string>
+    <string name="empty_library">Organize your next idea. Import a PDF or image pattern to begin your private, offline library.</string>
     <string name="image">Image</string><string name="start_project">Start project</string><string name="open_pattern">Open pattern</string>
     <string name="empty_projects">Start a project from your pattern library. Your counters, notes and reading position stay together.</string>
     <string name="action_failed">Could not save this action</string><string name="close">Close</string><string name="text">Text</string><string name="save">Save</string><string name="cancel">Cancel</string><string name="project_name">Project name</string>
     <string name="premium_title">More room to make</string>
+    <string name="premium_monthly">Premium · Monthly</string>
+    <string name="premium_annual">Premium · Annual</string>
     <string name="premium_description">Premium adds unlimited pattern imports, unlimited projects and multiple named counters per project.</string>
     <string name="free_description">Free includes 20 pattern imports, 3 unfinished projects, one counter per project, notes, materials requirements and the split-view reader. Previously imported files and existing projects remain accessible after Premium ends.</string>
     <string name="restore">Restore Amazon purchases</string><string name="billing_unconfigured">Subscriptions are unavailable in this build. Your offline workspace is ready to use.</string>
@@ -25,4 +27,18 @@
     <string name="privacy">Your patterns and project data stay on this device. No account, advertising or analytics. Only Amazon receipt and account identifiers go to the purchase verification service. Android app data is removed on uninstall; keep original source files or export them before uninstalling.</string>
     <string name="previous">Previous</string><string name="next">Next</string><string name="page_number">%1$d / %2$d</string><string name="fit">Fit</string><string name="zoom_in">Zoom +</string><string name="pattern_page">Pattern page %1$d</string>
     <string name="viewer_error">This pattern could not be rendered. Its original file is preserved. Export it to open in another reader.</string>
+    <string name="reading_position_failed">Could not save your reading position. Please try again.</string>
+    <string name="export_failed">Could not export this file. Choose another location and try again.</string>
+    <string name="free_library_limit">Free library limit reached. Your existing files remain available.</string>
+    <string name="selected_file_unreadable">Cannot read the selected file. Choose an accessible file and try again.</string>
+    <string name="pattern_too_large">This pattern exceeds the 100 MB import limit.</string>
+    <string name="invalid_pattern">Choose a valid PDF, JPEG, PNG or WebP pattern.</string>
+    <string name="import_preservation_failed">Could not save the imported file. Your source file has not been changed.</string>
+    <string name="free_project_limit">Free supports three unfinished projects. Complete a project or choose Premium to add more.</string>
+    <string name="additional_counters_premium">Additional counters require Premium. Your existing counters remain available.</string>
+    <string name="language">Language</string>
+    <string name="language_system">Use tablet language</string>
+    <string name="rows">Rows</string>
+    <string name="default_pattern">Pattern</string>
+    <string name="page_loading">%1$d / …</string>
 </resources>

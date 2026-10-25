@@ -14,12 +14,13 @@ p.add_argument('--tap')
 p.add_argument('--type')
 p.add_argument('--list',action='store_true')
 p.add_argument('--capture')
+p.add_argument('--redact-identifiers', action='store_true', help='Hide email and long identifier tokens in accessibility output')
 a=p.parse_args(); base=[a.adb,'-s',a.serial]
 def adb(*cmd): return subprocess.run(base+list(cmd),capture_output=True,check=True).stdout.decode(errors='replace')
 if a.tap or a.list:
     adb('shell','input','keyevent','224')
     dump = ''
-    for attempt in range(4):
+    for attempt in range(8):
         time.sleep(.4)
         dump = adb('shell','uiautomator','dump','/sdcard/craftfolio-ui.xml')
         if 'dumped to:' in dump: break
@@ -28,7 +29,11 @@ if a.tap or a.list:
     if a.list:
         for n in root.iter('node'):
             label=n.attrib.get('text') or n.attrib.get('content-desc')
-            if label: print(n.attrib.get('class'),repr(label),n.attrib.get('bounds'))
+            if label:
+                if a.redact_identifiers:
+                    label=re.sub(r'[\w.+-]+@[\w.-]+\.[A-Za-z]+','<REDACTED EMAIL>',label)
+                    label=re.sub(r'[A-Za-z0-9_+=/-]{28,}','<REDACTED ID>',label)
+                print(n.attrib.get('class'),repr(label),n.attrib.get('bounds'))
     if a.tap:
         n=next((n for n in root.iter('node') if a.tap in [n.attrib.get('text'),n.attrib.get('content-desc')]),None)
         if n is None: raise SystemExit(f'Label not visible: {a.tap}')

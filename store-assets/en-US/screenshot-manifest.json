@@ -1,6 +1,8 @@
 {
   "locale": "en-US",
-  "ui_language": "Shared English UI; regional metadata and caption spelling differ",
+  "ui_language": "en-US",
+  "locale_control": "Real in-app language selector; previous preference restored after capture",
+  "sample_content": "Original English CC0 sample documents and user-entered project text are not automatically translated",
   "model": "KFTRWI",
   "api": "28",
   "screenshots": [
@@ -10,7 +12,7 @@
         1200,
         1920
       ],
-      "sha256": "45f2e19c1facc0fac71ae85876bf46d8c9a76e64bf56aa8646fac87fba3700ba",
+      "sha256": "af665005309ca1b63268db7c38a717d022954d4c1aaec4b4a4795f21e9875ff1",
       "headline": "Save and organize PDF patterns",
       "benefit": "Search your private craft pattern library",
       "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
@@ -21,7 +23,7 @@
         1200,
         1920
       ],
-      "sha256": "445e26d27c159597780c8e437eee945d49fc56b8235fefb982dd0608cb070935",
+      "sha256": "009d994df47d4192337fdec3a13912e5ff499a359ea6e02608c0469010885c5e",
       "headline": "Never lose your row count",
       "benefit": "Read a pattern and count rows with undo",
       "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
@@ -32,7 +34,7 @@
         1920,
         1200
       ],
-      "sha256": "324b0a8214311e9923c86b363c16c28dad4ac477304264184bf468217c14ee9d",
+      "sha256": "8b5c874a96c4abfcafe321c557700fda56b8f9c3c0c0f08c91db87f5b424816c",
       "headline": "Patterns and counters side by side",
       "benefit": "A comfortable workspace for your Fire tablet",
       "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
@@ -43,11 +45,11 @@
         1920,
         1200
       ],
-      "sha256": "9ffc33694bf87a5a3cf913f21fa9bcd1b02e194d05412fde57abb13b497b345b",
+      "sha256": "c26f03c49b3b36411dc37de910ca74c0a7630570021b9759b41c7151de645242",
       "headline": "Remember every craft project",
       "benefit": "Resume saved counters, notes and requirements",
       "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
     }
   ],
-  "review": "PASS: all UK frames and the US library frame visually reviewed; other US frame bodies pixel-identical. Continue project differs because the last opened sample changed. Final signed-release capture required."
+  "review": "Native assertions passed; visual review required. Captions are separate copy, not image overlays."
 }

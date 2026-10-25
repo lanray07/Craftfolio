@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-25",
+  "version": "1.0.0",
+  "versionCode": 1,
+  "applicationId": "com.craftfolio.patterns",
+  "databaseSchema": 2,
+  "languages": [
+    "en-GB",
+    "en-US",
+    "de-DE",
+    "fr-FR",
+    "es-ES"
+  ],
+  "status": "Localized development builds; production release blocked",
+  "artifacts": [
+    {
+      "file": "Craftfolio-1.0.0-debug.apk",
+      "bytes": 17469653,
+      "sha256": "f42919d6bf7727bee3b277d7c39f8f2ea74dab4c2c9e487a5679ea41301ca4f1",
+      "signing": "Development key; testing only"
+    },
+    {
+      "file": "Craftfolio-1.0.0-unsigned.apk",
+      "bytes": 7739479,
+      "sha256": "2c7e1fff21a18b19cdd5e7ada7b4ca541e27bc589d3e0fdc36645714a2fdf0ff",
+      "signing": "Unsigned; developer release signing required"
+    }
+  ],
+  "verificationUrl": "",
+  "checks": {
+    "build": "PASS debug, androidTest, unsigned release",
+    "jvmTests": 5,
+    "physicalFireLocalizationTests": 2,
+    "physicalFireCaptureJobs": 5,
+    "screenshots": 20,
+    "lintErrors": 0,
+    "lintWarnings": 18,
+    "localizationAndAssetValidation": "PASS",
+    "amazonPremium": "TEST / Approved 2026-10-25; no purchase performed"
+  },
+  "releaseGates": [
+    "HTTPS verifier hosting and configured build URL",
+    "Actual Amazon App Tester, RVS sandbox and LAT purchase tests",
+    "Developer release signing and signed-build verification",
+    "Remaining device/accessibility/store checklist",
+    "Native-speaker editorial review not performed"
+  ],
+  "supersededBy": "../all-amazon-locales-2026-10-25/manifest.json"
+}

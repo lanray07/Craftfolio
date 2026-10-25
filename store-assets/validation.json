@@ -1,18 +1,146 @@
 [
   {
-    "locale": "en-GB",
-    "screenshot_count": 4,
-    "metadata_lengths": "pass",
-    "errors": [],
-    "remaining": "Exact signed-release capture and developer-console submission validation",
-    "visual_review": "pass on tested debug build"
-  },
-  {
     "locale": "en-US",
     "screenshot_count": 4,
     "metadata_lengths": "pass",
+    "ui_language": "en-US",
+    "capture_hashes": "pass",
     "errors": [],
-    "remaining": "Exact signed-release capture and developer-console submission validation",
-    "visual_review": "pass on tested debug build"
+    "remaining": "Final signed-release capture/review and production developer-console validation"
+  },
+  {
+    "locale": "en-GB",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "ui_language": "en-GB",
+    "capture_hashes": "pass",
+    "errors": [],
+    "remaining": "Final signed-release capture/review and production developer-console validation"
+  },
+  {
+    "locale": "en-AU",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "ui_language": "en-AU",
+    "capture_hashes": "pass",
+    "errors": [],
+    "remaining": "Final signed-release capture/review and production developer-console validation"
+  },
+  {
+    "locale": "en-IN",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "ui_language": "en-IN",
+    "capture_hashes": "pass",
+    "errors": [],
+    "remaining": "Final signed-release capture/review and production developer-console validation"
+  },
+  {
+    "locale": "de-DE",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "ui_language": "de-DE",
+    "capture_hashes": "pass",
+    "errors": [],
+    "remaining": "Final signed-release capture/review and production developer-console validation"
+  },
+  {
+    "locale": "fr-FR",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "ui_language": "fr-FR",
+    "capture_hashes": "pass",
+    "errors": [],
+    "remaining": "Final signed-release capture/review and production developer-console validation"
+  },
+  {
+    "locale": "es-ES",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "ui_language": "es-ES",
+    "capture_hashes": "pass",
+    "errors": [],
+    "remaining": "Final signed-release capture/review and production developer-console validation"
+  },
+  {
+    "locale": "es-MX",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "ui_language": "es-MX",
+    "capture_hashes": "pass",
+    "errors": [],
+    "remaining": "Final signed-release capture/review and production developer-console validation"
+  },
+  {
+    "locale": "it-IT",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "ui_language": "it-IT",
+    "capture_hashes": "pass",
+    "errors": [],
+    "remaining": "Final signed-release capture/review and production developer-console validation"
+  },
+  {
+    "locale": "ja-JP",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "ui_language": "ja-JP",
+    "capture_hashes": "pass",
+    "errors": [],
+    "remaining": "Final signed-release capture/review and production developer-console validation"
+  },
+  {
+    "locale": "nl-NL",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "ui_language": "nl-NL",
+    "capture_hashes": "pass",
+    "errors": [],
+    "remaining": "Final signed-release capture/review and production developer-console validation"
+  },
+  {
+    "locale": "pl-PL",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "ui_language": "pl-PL",
+    "capture_hashes": "pass",
+    "errors": [],
+    "remaining": "Final signed-release capture/review and production developer-console validation"
+  },
+  {
+    "locale": "pt-BR",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "ui_language": "pt-BR",
+    "capture_hashes": "pass",
+    "errors": [],
+    "remaining": "Final signed-release capture/review and production developer-console validation"
+  },
+  {
+    "locale": "pt-PT",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "ui_language": "pt-PT",
+    "capture_hashes": "pass",
+    "errors": [],
+    "remaining": "Final signed-release capture/review and production developer-console validation"
+  },
+  {
+    "locale": "sv-SE",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "ui_language": "sv-SE",
+    "capture_hashes": "pass",
+    "errors": [],
+    "remaining": "Final signed-release capture/review and production developer-console validation"
+  },
+  {
+    "locale": "zh-CN",
+    "screenshot_count": 4,
+    "metadata_lengths": "pass",
+    "ui_language": "zh-CN",
+    "capture_hashes": "pass",
+    "errors": [],
+    "remaining": "Final signed-release capture/review and production developer-console validation"
   }
 ]

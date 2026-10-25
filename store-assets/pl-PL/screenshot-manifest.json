@@ -1,0 +1,55 @@
+{
+  "locale": "pl-PL",
+  "ui_language": "pl-PL",
+  "locale_control": "Real in-app language selector; previous preference restored after capture",
+  "sample_content": "Original English CC0 sample documents and user-entered project text are not automatically translated",
+  "model": "KFTRWI",
+  "api": "28",
+  "screenshots": [
+    {
+      "file": "01-pattern-library.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "566b0051bc3444ece9cc138bfd8a32def592b14353db4502f352207f69bcfd02",
+      "headline": "Twoja biblioteka wzor\u00f3w PDF",
+      "benefit": "Twoja biblioteka wzor\u00f3w PDF",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "02-knitting-row-counter.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "7f6751df0f95dd19697bfdd3cdfde50e7cc15016e7b218a4ff69c94a79eca834",
+      "headline": "Nie zgub liczby rz\u0119d\u00f3w",
+      "benefit": "Nie zgub liczby rz\u0119d\u00f3w",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "03-split-view-workspace.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "fa436d2de6fac8f40ccb052b4273c963f67aab99538ad1826f941ba809c79dfc",
+      "headline": "Wz\u00f3r i liczniki obok siebie",
+      "benefit": "Wz\u00f3r i liczniki obok siebie",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "04-project-tracker.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "d85792189ded5160c3ad352d7417012eccd2c712373f1d37831496902d78e1a2",
+      "headline": "Wzn\u00f3w ka\u017cdy tw\u00f3rczy projekt",
+      "benefit": "Wzn\u00f3w ka\u017cdy tw\u00f3rczy projekt",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    }
+  ],
+  "review": "Native assertions passed; visual review required. Captions are separate copy, not image overlays."
+}

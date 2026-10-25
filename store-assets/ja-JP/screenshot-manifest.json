@@ -1,0 +1,55 @@
+{
+  "locale": "ja-JP",
+  "ui_language": "ja-JP",
+  "locale_control": "Real in-app language selector; previous preference restored after capture",
+  "sample_content": "Original English CC0 sample documents and user-entered project text are not automatically translated",
+  "model": "KFTRWI",
+  "api": "28",
+  "screenshots": [
+    {
+      "file": "01-pattern-library.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "599f0972788729b374dd7d75a9f187560e684bdc7c7b7337131c8bd1588e9de7",
+      "headline": "\u81ea\u5206\u3060\u3051\u306ePDF\u7de8\u307f\u56f3\u30e9\u30a4\u30d6\u30e9\u30ea",
+      "benefit": "\u81ea\u5206\u3060\u3051\u306ePDF\u7de8\u307f\u56f3\u30e9\u30a4\u30d6\u30e9\u30ea",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "02-knitting-row-counter.png",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "sha256": "9c51a0d1cea42618d4d3f1f4169d1a2789b503576b0dd9dac6f4fe535249240e",
+      "headline": "\u6bb5\u6570\u3092\u5fd8\u308c\u305a\u306b\u8a18\u9332",
+      "benefit": "\u6bb5\u6570\u3092\u5fd8\u308c\u305a\u306b\u8a18\u9332",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "03-split-view-workspace.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "2276d6e95a8e8ad979c8072b0857f31d9a2bcba98d603167940a77b48248a063",
+      "headline": "\u7de8\u307f\u56f3\u3068\u30ab\u30a6\u30f3\u30bf\u30fc\u3092\u4e26\u3079\u3066\u8868\u793a",
+      "benefit": "\u7de8\u307f\u56f3\u3068\u30ab\u30a6\u30f3\u30bf\u30fc\u3092\u4e26\u3079\u3066\u8868\u793a",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    },
+    {
+      "file": "04-project-tracker.png",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "sha256": "382925960e6df8f5f548942ff35fe89e93c5f72f731f4df1a931f684d336ab31",
+      "headline": "\u4f5c\u54c1\u3065\u304f\u308a\u3092\u7d9a\u304d\u304b\u3089\u518d\u958b",
+      "benefit": "\u4f5c\u54c1\u3065\u304f\u308a\u3092\u7d9a\u304d\u304b\u3089\u518d\u958b",
+      "origin": "Android UiAutomation pixels after Compose screen and foreground-window assertions"
+    }
+  ],
+  "review": "Native assertions passed; visual review required. Captions are separate copy, not image overlays."
+}

@@ -57,7 +57,7 @@ class JourneyTest {
             val originalBytes = source.readBytes()
             repo.import(Uri.fromFile(source), "Knitting", false)
             val pattern = repo.dao.patterns().first().single()
-            val id = repo.create(pattern, "Moss stitch scarf", "200 g wool · 5 mm needles", false)
+            val id = repo.create(pattern, "Moss stitch scarf", "200 g wool · 5 mm needles", false, "Rows")
             val c = repo.dao.counters().first().single()
             repeat(42) { repo.change(c.id, 1) }; repo.change(c.id, -1); repo.undo(c.id)
             repo.note(id, "Start the next repeat on row 43.")
